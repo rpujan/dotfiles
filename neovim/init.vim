@@ -7,6 +7,7 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set nu
+" set relativenumber
 set nowrap
 set smartcase
 set noswapfile
@@ -14,6 +15,9 @@ set nobackup
 " set undodir= .vim/undodir
 set undofile
 set incsearch
+set encoding=utf-8
+set signcolumn=yes
+
 "
 " Give more space for displaying messages.
 set cmdheight=2
@@ -30,19 +34,24 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 set statusline=\PATH:\ %r%F\ \ \ \ \LINE:\ %l/%L\ TIME:\ %{strftime('%c')}
 
-call plug#begin('.vim/plugged')
+call plug#begin('~/AppData/Local/nvim/plugged')
 
 " Plug 'ycm-core/YouCompleteMe'
 Plug 'morhetz/gruvbox'
-Plug 'jremmen/vim-ripgrep'
+" Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
-Plug 'leafgarland/typescript-vim'
+" Plug 'leafgarland/typescript-vim'
 Plug 'vim-utils/vim-man'
-" Plug 'lyuts/vim-rtags'
-Plug 'git@github.com:kien/ctrlp.vim.git'
 Plug 'mbbill/undotree'
 Plug 'preservim/nerdtree'
 Plug 'mattn/emmet-vim'
+Plug 'tmhedberg/SimpylFold'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'airblade/vim-gitgutter'
+Plug 'preservim/nerdcommenter'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 colorscheme onehalflight
@@ -113,11 +122,11 @@ endfun
 autocmd BufWritePre * :call TrimWhitespace()
 autocmd FileType typescript :call GoYCM()
 autocmd FileType cpp,cxx,h,hpp,c :call GoCoc()
-autocmd FileType javascript set formatprg=prettier\ --stdin
-autocmd BufWritePre *.js :normal gggqG
+" autocmd FileType javascript set formatprg=prettier\ --stdin
+" autocmd BufWritePre *.js :normal gggqG
 
 map <C-n> :NERDTreeToggle<CR>
-
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " ------------------------------------------------------------------------------------
 " status bar colors
@@ -152,9 +161,15 @@ let g:currentmode={
     \ 't'  : 'Terminal'
     \}
 
+function! GitStatus()
+  let [a,m,r] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
+
 set laststatus=2
 set noshowmode
 set statusline=
+set statusline+=%0*\ %{toupper(g:currentmode[mode()])}\  " The current mode
 set statusline+=%0*\ %n\                                 " Buffer number
 set statusline+=%1*\ %<%F%m%r%h%w\                       " File path, modified, readonly, helpfile, preview
 set statusline+=%3*│                                     " Separator
@@ -166,7 +181,7 @@ set statusline+=%=                                       " Right Side
 set statusline+=%2*\ col:\ %02v\                         " Colomn number
 set statusline+=%3*│                                     " Separator
 set statusline+=%1*\ ln:\ %02l/%L\ (%3p%%)\              " Line number / total lines, percentage of document
-set statusline+=%0*\ %{toupper(g:currentmode[mode()])}\  " The current mode
+set statusline+=%{GitStatus()}                           " Git Status (add/modified/delete)
 
 hi User1 ctermfg=007 ctermbg=239 guibg=#4e4e4e guifg=#adadad
 hi User2 ctermfg=007 ctermbg=236 guibg=#303030 guifg=#adadad
@@ -185,3 +200,52 @@ let g:user_emmet_expandabbr_key='<Tab>'
 augroup EmmetSettings
   autocmd! FileType html,css imap <tab> <plug>(emmet-expand-abbr)
 augroup END
+
+"----- end emmet related ------
+
+" How can I go to end of parenthesis/brackets/quotes without switching insert mode in Vim?
+inoremap <C-e> <C-o>A
+
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
+
+"----- Python related ------
+
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+	
+" -----------------------
+" **** vim-gitgutter ****
+" -----------------------
+let g:gitgutter_git_executable = 'C:\Program Files\Git\bin\git.exe'
+
+highlight GitGutterAdd guifg=#009900 ctermfg=Green
+highlight GitGutterChange guifg=#bbbb00 ctermfg=Yellow
+highlight GitGutterDelete guifg=#ff2222 ctermfg=Red
+nmap ) <Plug>(GitGutterNextHunk)
+nmap ( <Plug>(GitGutterPrevHunk)
+let g:gitgutter_enabled = 1
+let g:gitgutter_map_keys = 0
+let g:gitgutter_highlight_linenrs = 1
+
+
+
+" ----------------------------------
+" Deoplete – Code Completion Engine
+" ----------------------------------
+
+" Use deoplete.let g:deoplete#enable_at_startup = 1
+
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
