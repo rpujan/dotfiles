@@ -1,0 +1,4 @@
+git config --local user.name "test"
+git config --local user.email test@gmail.com
+git config --local mergetool.fugitive.cmd 'nvim -f -c "Gvdiffsplit!" "$MERGED"'
+git config --local merge.tool fugitive

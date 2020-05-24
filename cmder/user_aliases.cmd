@@ -9,6 +9,7 @@
 e.=explorer .
 gl=git log --oneline --all --graph --decorate  $*
 ls=ls --show-control-chars -F --color $*
+ll=ls -l -a
 pwd=cd
 clear=cls
 history=cat -n "%CMDER_ROOT%\config\.history"
@@ -16,6 +17,7 @@ unalias=alias /d $1
 vi=vim $*
 cmderr=cd /d "%CMDER_ROOT%"
 
+~=cd %homepath%
 ..=cd ..
 ...=cd ../..
 ....=cd ../../..
@@ -26,7 +28,9 @@ insight=cd c:/work/projects/insight
 dm=cd c:/work/projects/insight/analytics/datamanager/react/datamanager
 meeting=cd c:/work/projects/insight/brainstormod/meeting/react/meeting
 vici=cd c:/work/projects/vici/viciproject/app/react/ideas/src
-~=cd %homepath%
+learn=cd c:/work/projects/learning
+vstatus=cd c:/work/projects/learning && nvim-qt vim-learn.txt
+
 
 ;= rem The rest of my git aliases
 gl=git pull --prune
@@ -45,3 +49,6 @@ gb=git branch
 gs=git status -sb
 gac=git add -A && git commit -m
 ge=git-edit-new
+
+;= rem set arg1=%1
+;= rem gcl=git diff-tree --no-commit-id --name-only -r %1
