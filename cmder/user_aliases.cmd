@@ -22,6 +22,7 @@ cmderr=cd /d "%CMDER_ROOT%"
 ...=cd ../..
 ....=cd ../../..
 ....=cd ../../../..
+
 work=cd c:/work
 projects=cd c:/work/projects
 insight=cd c:/work/projects/insight
@@ -29,7 +30,8 @@ dm=cd c:/work/projects/insight/analytics/datamanager/react/datamanager
 meeting=cd c:/work/projects/insight/brainstormod/meeting/react/meeting
 vici=cd c:/work/projects/vici/viciproject/app/react/ideas/src
 learn=cd c:/work/projects/learning
-vstatus=cd c:/work/projects/learning && nvim-qt vim-learn.txt
+
+practice=cd c:/work/projects/learning/sudoku-master && nvim-qt practice.txt
 
 
 ;= rem The rest of my git aliases

@@ -7,11 +7,11 @@ alias projects="cd c:\work/projects"
 alias insight="cd c:\work/projects/insight"
 alias dm="cd c:\work/projects/insight/analytics/datamanager/react/datamanager"
 alias meeting="cd c:\work/projects/insight/brainstormod/meeting/react/meeting"
-alias ll="ls -l -a"
+#alias ll="ls -l -a"
 
 # The rest of my git aliases
 alias gl='git pull --prune'
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+#alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gp='git push origin HEAD'
 
 # Remove `+` and `-` from start of diff lines; just rely upon color.
@@ -34,4 +34,34 @@ alias cpc="cp -rf c:/cmder/config/user_aliases.cmd c:/Ram/Projects/Dotfiles/cmde
 mcd() {
   mkdir -p "$1"
   cd "$1"
+}
+
+ll() {
+	if [ "$1" != "" ]; then
+		cd "$1" | ls -l -a
+	else
+		ls -l -a
+	fi
+}
+
+glog() {
+	if [ "$1" = "dm" ]; then
+		cd c:\work/projects/insight/analytics/datamanager/react/datamanager
+		# git log --oneline --graph --decorate
+		git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	elif [ "$1" = "meeting" ]; then
+		cd c:\work/projects/insight/brainstormod/meeting/react/meeting
+		git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	else
+		git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	fi
+}
+
+cdf() {
+	cp -rf ~/AppData/Local/nvim/init.vim c:/Ram/Projects/Dotfiles/neovim/init.vim
+	cp -rf ~/.bashrc c:/Ram/Projects/Dotfiles/bash/.bashrc
+	cp -rf c:/cmder/config/user_aliases.cmd c:/Ram/Projects/Dotfiles/cmder/user_aliases.cmd
+	cd c:/Ram/Projects/Dotfiles
+	git commit -m "files modified"
+	git push
 }
