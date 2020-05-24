@@ -62,6 +62,10 @@ cdf() {
 	cp -rf ~/.bashrc c:/Ram/Projects/Dotfiles/bash/.bashrc
 	cp -rf c:/cmder/config/user_aliases.cmd c:/Ram/Projects/Dotfiles/cmder/user_aliases.cmd
 	cd c:/Ram/Projects/Dotfiles
-	git commit -m "files modified"
+	git commit -a -m "files modified"
 	git push
+}
+
+dummy() {
+	return
 }
