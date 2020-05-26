@@ -6,7 +6,9 @@ alias work="cd c:\work"
 alias projects="cd c:\work/projects"
 alias insight="cd c:\work/projects/insight"
 alias dm="cd c:\work/projects/insight/analytics/datamanager/react/datamanager"
+alias dmi="cd c:\work/projects/insight/analytics/datamanager/mvc/insight.dm"
 alias meeting="cd c:\work/projects/insight/brainstormod/meeting/react/meeting"
+alias vici="cd c:/work/projects/vici/viciproject/app/react/ideas/src"
 #alias ll="ls -l -a"
 
 # The rest of my git aliases
@@ -66,6 +68,43 @@ cdf() {
 	git push
 }
 
-dummy() {
-	return
+fdiff() {
+	if [ $# -eq 0 ]
+	  then
+		echo "No file name supplied"
+		exit 1
+	fi
+	
+	git diff HEAD~1 "$1"
+}
+
+go() {
+	if [ $# -eq 0 ] ; then
+		echo "No file name supplied"
+		exit 1
+	fi
+	
+	case "$1" in
+	
+		work) cd c:/work
+			;;
+			
+		projects) cd c:/work/projects
+			;;
+			
+		dm) cd c:/work/projects/insight/analytics/datamanager/react/datamanager
+			;;
+
+		dmi) cd c:/work/projects/insight/analytics/datamanager/mvc/insight.dm
+			;;
+			
+		insight) cd c:/work/projects/insight
+			;;
+			
+		vici) cd c:/work/projects/vici/viciproject/app/react/ideas/src
+			;;
+			
+		meeting) cd c:/work/projects/insight/brainstormod/meeting/react/meeting
+			;;
+	esac
 }
