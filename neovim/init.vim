@@ -7,8 +7,8 @@ set tabstop=2 softtabstop=2
 set shiftwidth=2
 set expandtab
 set smartindent
-set nu
-" set relativenumber
+" set nu
+set relativenumber
 set nowrap
 set smartcase
 set noswapfile
@@ -52,6 +52,7 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 	Plug 'sheerun/vim-polyglot'
 	Plug 'itchyny/lightline.vim'
 	Plug 'mhinz/vim-signify'
+	Plug 'kassio/neoterm'
 call plug#end()
 
 " colorscheme onehalflight
@@ -134,3 +135,6 @@ set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
 
+let g:neoterm_default_mod = 'belowright'
+
+" https://www.reddit.com/r/vim/comments/gn7yv6/i_am_a_decent_programmer_but_vim_makes_a/fr9qbqy/?utm_source=share&utm_medium=web2x

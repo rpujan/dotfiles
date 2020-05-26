@@ -27,6 +27,7 @@ work=cd c:/work
 projects=cd c:/work/projects
 insight=cd c:/work/projects/insight
 dm=cd c:/work/projects/insight/analytics/datamanager/react/datamanager
+dmi=cd c:/work/projects/insight/analytics/datamanager/mvc/insight.dm
 meeting=cd c:/work/projects/insight/brainstormod/meeting/react/meeting
 vici=cd c:/work/projects/vici/viciproject/app/react/ideas/src
 learn=cd c:/work/projects/learning
