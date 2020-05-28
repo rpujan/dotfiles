@@ -14,7 +14,7 @@ pwd=cd
 clear=cls
 history=cat -n "%CMDER_ROOT%\config\.history"
 unalias=alias /d $1
-vi=vim $*
+vi=nvim-qt $*
 cmderr=cd /d "%CMDER_ROOT%"
 
 ~=cd %homepath%

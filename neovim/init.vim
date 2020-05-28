@@ -10,6 +10,8 @@ set smartindent
 " set nu
 set relativenumber
 set nowrap
+set ignorecase
+
 set smartcase
 set noswapfile
 set nobackup
@@ -135,6 +137,13 @@ set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
 
-let g:neoterm_default_mod = 'belowright'
+" let g:neoterm_default_mod = 'belowright'
+
+" Hitting F5 will clean out all railing whitespace or tabs in your file
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
+
+" When you’re in visual mode (that is, you have text selected), 
+" hitting D will duplicate whatever’s selected directly below
+vmap D y'>p
 
 " https://www.reddit.com/r/vim/comments/gn7yv6/i_am_a_decent_programmer_but_vim_makes_a/fr9qbqy/?utm_source=share&utm_medium=web2x
