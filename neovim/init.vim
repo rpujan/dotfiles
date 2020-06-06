@@ -55,6 +55,7 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 	Plug 'itchyny/lightline.vim'
 	Plug 'mhinz/vim-signify'
 	Plug 'kassio/neoterm'
+	Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
 " colorscheme onehalflight
@@ -65,6 +66,14 @@ let g:airline_theme='onedark'
 
 " colorscheme gruvbox
 " set background=dark
+
+
+" set termguicolors     " enable true colors support
+" let ayucolor="light"  " for light version of theme
+" let ayucolor="mirage" " for mirage version of theme
+" let ayucolor="dark"   " for dark version of theme
+" colorscheme ayu
+
 
 if executable('rg')
     let g:rg_derive_root='true'

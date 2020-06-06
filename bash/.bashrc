@@ -1,3 +1,4 @@
+alias home="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -8,7 +9,7 @@ alias insight="cd c:\work/projects/insight"
 alias dm="cd c:\work/projects/insight/analytics/datamanager/react/datamanager"
 alias dmi="cd c:\work/projects/insight/analytics/datamanager/mvc/insight.dm"
 alias meeting="cd c:\work/projects/insight/brainstormod/meeting/react/meeting"
-alias vici="cd c:/work/projects/vici/viciproject/app/react/ideas/src"
+alias vici="cd c:/work/projects/learning/vici"
 #alias ll="ls -l -a"
 
 # The rest of my git aliases
@@ -107,4 +108,12 @@ go() {
 		meeting) cd c:/work/projects/insight/brainstormod/meeting/react/meeting
 			;;
 	esac
+}
+
+vi() {
+	if [ $# -eq 0 ]; then
+		nvim-qt
+	else
+		nvim-qt "$1"
+	fi
 }

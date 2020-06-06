@@ -29,7 +29,7 @@ insight=cd c:/work/projects/insight
 dm=cd c:/work/projects/insight/analytics/datamanager/react/datamanager
 dmi=cd c:/work/projects/insight/analytics/datamanager/mvc/insight.dm
 meeting=cd c:/work/projects/insight/brainstormod/meeting/react/meeting
-vici=cd c:/work/projects/vici/viciproject/app/react/ideas/src
+vici=cd c:/work/projects/learning/vici
 learn=cd c:/work/projects/learning
 
 practice=cd c:/work/projects/learning/sudoku-master && nvim-qt practice.txt
