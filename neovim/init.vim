@@ -100,6 +100,10 @@ nnoremap <silent> <Leader>- :vertical resize -5<CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+function Mct()
+  :read ~/.vim/templates/skeleton.cpp
+endfunction
+
 fun! TrimWhitespace()
     let l:save = winsaveview()
     keeppatterns %s/\s\+$//e
@@ -107,6 +111,11 @@ fun! TrimWhitespace()
 endfun
 
 autocmd BufWritePre * :call TrimWhitespace()
+
+autocmd BufEnter *.c colorscheme PaperColor
+autocmd BufEnter *.c set background=light
+autocmd BufEnter *.cpp colorscheme PaperColor
+autocmd BufEnter *.cpp set background=light
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -121,7 +130,7 @@ let g:lightline = {
       \   'gitbranch': 'FugitiveHead'
       \ },
       \ }
-	  
+
 
 "----- emmet related ------
 
