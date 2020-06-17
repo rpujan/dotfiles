@@ -9,7 +9,7 @@ alias insight="cd c:\work/projects/insight"
 alias dm="cd c:\work/projects/insight/analytics/datamanager/react/datamanager"
 alias dmi="cd c:\work/projects/insight/analytics/datamanager/mvc/insight.dm"
 alias meeting="cd c:\work/projects/insight/brainstormod/meeting/react/meeting"
-alias vici="cd c:/work/projects/learning/vici"
+alias vici="cd c:/work/projects/learning/vici/containers/"
 #alias ll="ls -l -a"
 
 # The rest of my git aliases
@@ -116,4 +116,23 @@ vi() {
 	else
 		nvim-qt "$1"
 	fi
+}
+
+# cd() {
+#	if [ $# -eq 0 ] ; then
+#		exit 1
+#	fi
+#	cd -path "*"$1"*"
+# }
+
+# tmux() {
+#	c:/cygwin64/bin/tmux.exe new-session
+# }
+
+c() {
+	gcc -O2 -Wall "$1".c -o "$1".exe && ./"$1".exe
+}
+
+cpp() {
+	g++ --std=c++11 -O2 -Wall "$1".cpp -o "$1".exe && ./"$1".exe
 }

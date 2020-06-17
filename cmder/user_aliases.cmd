@@ -29,11 +29,12 @@ insight=cd c:/work/projects/insight
 dm=cd c:/work/projects/insight/analytics/datamanager/react/datamanager
 dmi=cd c:/work/projects/insight/analytics/datamanager/mvc/insight.dm
 meeting=cd c:/work/projects/insight/brainstormod/meeting/react/meeting
-vici=cd c:/work/projects/learning/vici
+vici=cd c:/work/projects/learning/vici/containers/
 learn=cd c:/work/projects/learning
 
 practice=cd c:/work/projects/learning/sudoku-master && nvim-qt practice.txt
 
+cpp=g++ --std=c++11 -O2 -Wall %1 -o %2
 
 ;= rem The rest of my git aliases
 gl=git pull --prune

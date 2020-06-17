@@ -3,8 +3,8 @@ set noshowmode
 
 set hidden
 set noerrorbells
-set tabstop=2 softtabstop=2
-set shiftwidth=2
+set tabstop=4 softtabstop=4
+set shiftwidth=4
 set expandtab
 set smartindent
 " set nu
@@ -21,6 +21,7 @@ set incsearch
 set encoding=utf-8
 set signcolumn=yes
 
+
 " Give more space for displaying messages.
 set cmdheight=2
 
@@ -35,27 +36,17 @@ set colorcolumn=120
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/AppData/Local/nvim/plugged')
-	" Plug 'ycm-core/YouCompleteMe'
-	Plug 'morhetz/gruvbox'
-	" Plug 'jremmen/vim-ripgrep'
 	Plug 'tpope/vim-fugitive'
-	" Plug 'leafgarland/typescript-vim'
-	Plug 'vim-utils/vim-man'
 	Plug 'mbbill/undotree'
 	Plug 'preservim/nerdtree'
 	Plug 'mattn/emmet-vim'
-	Plug 'tmhedberg/SimpylFold'
 	Plug 'terryma/vim-multiple-cursors'
-	" Plug 'airblade/vim-gitgutter'
 	Plug 'preservim/nerdcommenter'
-	" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-	" Plug 'easymotion/vim-easymotion'
 	Plug 'tpope/vim-commentary'
 	Plug 'sheerun/vim-polyglot'
 	Plug 'itchyny/lightline.vim'
-	Plug 'mhinz/vim-signify'
-	Plug 'kassio/neoterm'
-	Plug 'ayu-theme/ayu-vim'
+	Plug 'unblevable/quick-scope'
+	Plug 'mhinz/vim-startify'
 call plug#end()
 
 " colorscheme onehalflight
@@ -66,14 +57,6 @@ let g:airline_theme='onedark'
 
 " colorscheme gruvbox
 " set background=dark
-
-
-" set termguicolors     " enable true colors support
-" let ayucolor="light"  " for light version of theme
-" let ayucolor="mirage" " for mirage version of theme
-" let ayucolor="dark"   " for dark version of theme
-" colorscheme ayu
-
 
 if executable('rg')
     let g:rg_derive_root='true'
@@ -120,6 +103,7 @@ autocmd BufEnter *.cpp set background=light
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+imap jj <Esc>
 
 let g:lightline = {
       \ 'active': {
