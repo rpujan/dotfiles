@@ -19,7 +19,7 @@ set nobackup
 set undofile
 set incsearch
 set encoding=utf-8
-set signcolumn=yes
+" set signcolumn=yes
 
 
 " Give more space for displaying messages.
@@ -39,7 +39,7 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 	Plug 'tpope/vim-fugitive'
 	Plug 'mbbill/undotree'
 	Plug 'preservim/nerdtree'
-	Plug 'mattn/emmet-vim'
+	" Plug 'mattn/emmet-vim'
 	Plug 'terryma/vim-multiple-cursors'
 	Plug 'preservim/nerdcommenter'
 	Plug 'tpope/vim-commentary'
@@ -95,9 +95,9 @@ endfun
 
 autocmd BufWritePre * :call TrimWhitespace()
 
-autocmd BufEnter *.c colorscheme PaperColor
+autocmd BufEnter *.c colorscheme summerfruit256
 autocmd BufEnter *.c set background=light
-autocmd BufEnter *.cpp colorscheme PaperColor
+autocmd BufEnter *.cpp colorscheme summerfruit256
 autocmd BufEnter *.cpp set background=light
 
 map <C-n> :NERDTreeToggle<CR>
@@ -118,13 +118,13 @@ let g:lightline = {
 
 "----- emmet related ------
 
-autocmd FileType html,css EmmetInstall
+" autocmd FileType html,css EmmetInstall
 
-let g:user_emmet_expandabbr_key='<Tab>'
+" let g:user_emmet_expandabbr_key='<Tab>'
 
-augroup EmmetSettings
-  autocmd! FileType html,css imap <tab> <plug>(emmet-expand-abbr)
-augroup END
+" augroup EmmetSettings
+"   autocmd! FileType html,css imap <tab> <plug>(emmet-expand-abbr)
+" augroup END
 
 "----- end emmet related ------
 
