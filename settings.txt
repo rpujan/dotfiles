@@ -29,3 +29,7 @@ install react package
 ---------------------
 sudo npm i -g create-react-app
 
+gcc
+----
+sudo apt update
+sudo apt install build-essential
