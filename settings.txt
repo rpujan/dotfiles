@@ -20,4 +20,12 @@ sudo apt install gnome-shell-extension-pixelsaver
 gnome-extensions enable pixel-saver@deadalnix.me
 gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
 
+install nodejs
+--------------
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install -y nodejs
+
+install react package
+---------------------
+sudo npm i -g create-react-app
 
