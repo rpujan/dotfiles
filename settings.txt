@@ -33,3 +33,31 @@ gcc
 ----
 sudo apt update
 sudo apt install build-essential
+
+Generate an SSH key pair
+------------------------
+1. Open a terminal
+2. ssh-keygen -t rsa -b 2048 -C "<comment>"
+   You may want to use an email address for the comment
+
+Add an SSH key to your GitLab account
+-------------------------------------
+Copy the contents of your public key file. You can do this manually or use a script
+xclip -sel clip < ~/.ssh/id_rsa.pub
+Add to GitLab
+
+Verify that you can connect
+---------------------------
+Open a terminal and run this command, replacing gitlab.example.com with your GitLab instance URL:
+
+ssh -T git@gitlab.example.com
+
+If this is the first time you connect, you should verify the authenticity of the GitLab host. 
+
+Run the ssh -T git@gitlab.example.com command again. You should receive a Welcome to GitLab, @username! message. 
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMs6r/sjKvH0rND2pjlsiB95SLRmmw4pbNYrlRam1fjNX1oxIC7d6eBWFx62MiuD7q6LJWt7VNyJaSZn5PgU6KEhDy1046ClWAbpI7t2qs73bZ14nU6FKNPSKz2zTzBsQhPbbJu0zt+E31vVLqFibKcUCyR7/j/afOWHuMkzGDA+6XiQeIFrKbiFgGCyw1NOOXTs4d+od7+lwl7gsMHqusoWvd+CAf0YQpAikI9lDWYCDxGd6xC8yA2PxemEF8EBnKh6DTaoFMlvTOcpy/gpSrVGije6zjlP/N3PtGuiUJtOavDrJMwOITcDm4o6hx8IOrYXzt53hCvKByFNYZ5Tlx rpujan@gmail.com
+
+
+
