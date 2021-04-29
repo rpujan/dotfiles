@@ -22,8 +22,8 @@ gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
 
 install nodejs
 --------------
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt install -y nodejs
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 install react package
 ---------------------
@@ -56,8 +56,6 @@ If this is the first time you connect, you should verify the authenticity of the
 
 Run the ssh -T git@gitlab.example.com command again. You should receive a Welcome to GitLab, @username! message. 
 
-
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMs6r/sjKvH0rND2pjlsiB95SLRmmw4pbNYrlRam1fjNX1oxIC7d6eBWFx62MiuD7q6LJWt7VNyJaSZn5PgU6KEhDy1046ClWAbpI7t2qs73bZ14nU6FKNPSKz2zTzBsQhPbbJu0zt+E31vVLqFibKcUCyR7/j/afOWHuMkzGDA+6XiQeIFrKbiFgGCyw1NOOXTs4d+od7+lwl7gsMHqusoWvd+CAf0YQpAikI9lDWYCDxGd6xC8yA2PxemEF8EBnKh6DTaoFMlvTOcpy/gpSrVGije6zjlP/N3PtGuiUJtOavDrJMwOITcDm4o6hx8IOrYXzt53hCvKByFNYZ5Tlx rpujan@gmail.com
 
 
 
