@@ -116,6 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
 # custom alias
 alias cls='clear'
 alias home='cd ~'
@@ -129,3 +130,5 @@ alias abi='cd ~/work/Projects/Alpaca/ABI/React/abi'
 alias sch='cd ~/work/Projects/Alpaca/Scheduling/React/scheduling'
 
 alias tmux='TERM=screen-256color-bce tmux'
+
+PS1='\W $ '
