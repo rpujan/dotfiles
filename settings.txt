@@ -27,7 +27,7 @@ sudo apt-get install -y nodejs
 
 install react package
 ---------------------
-sudo npm i -g create-react-app
+sudo npm i -g create-react-app gulp gulp-cli
 
 gcc
 ----
@@ -44,18 +44,10 @@ Add an SSH key to your GitLab account
 -------------------------------------
 Copy the contents of your public key file. You can do this manually or use a script
 xclip -sel clip < ~/.ssh/id_rsa.pub
-Add to GitLab
 
-Verify that you can connect
----------------------------
-Open a terminal and run this command, replacing gitlab.example.com with your GitLab instance URL:
+Add key to GitLab
 
-ssh -T git@gitlab.example.com
-
-If this is the first time you connect, you should verify the authenticity of the GitLab host. 
-
-Run the ssh -T git@gitlab.example.com command again. You should receive a Welcome to GitLab, @username! message. 
-
-
-
+install tmux
+------------
+sudo apt install tmux
 
