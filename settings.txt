@@ -8,6 +8,12 @@ Install git
 -----------
 sudo apt install git-all
 
+set folliwng setting:
+
+git config --global user.name "rpujan"
+git config --global user.email "rpujan@gmail.com"
+git config --global core.autocrlf input
+
 Install vim-plug
 ----------------
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
