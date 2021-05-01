@@ -127,3 +127,5 @@ alias projects='cd ~/work/Projects'
 alias alpaca='cd ~/work/Projects/Alpaca'
 alias abi='cd ~/work/Projects/Alpaca/ABI/React/abi'
 alias sch='cd ~/work/Projects/Alpaca/Scheduling/React/scheduling'
+
+alias tmux='TERM=screen-256color-bce tmux'
