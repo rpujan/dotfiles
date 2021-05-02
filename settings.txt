@@ -29,6 +29,7 @@ gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
 install nodejs
 --------------
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
 
 install react package
