@@ -1,0 +1,17 @@
+The file has instructions to setup/modify "Git bash" terminal for windows.
+
+1. Goto C:\Work\Projects\Misc\dotfiles\Git and make copy of existing file "git-prompt.sh".
+
+2. Copy "git-prompt.sh" from this folder to above said path and override it.
+
+3. Download Ubuntu Mono font for windows and install it.
+
+4. Open "Git bash" dialog and "Options" menu by clicking in the dialog header.
+
+5. In Looks menu, set background color : r-45, g-9, b-34 and use forground: r-191, g-191, b-191.
+
+6. In Text menu, use Ubuntu Mono font with 12px height. other setting shall remain same.
+
+7. Optional. You can increase terminal size by selecting "Window" menu and set column:100 and Rows: 24.
+
+8. In Terminal menu, make sure that Type should select "xterm-256color"
