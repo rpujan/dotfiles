@@ -1,0 +1,4 @@
+Use this link to setup MinGW c++ in nodepad++
+---------------------------------------------
+http://www.edparrish.net/common/npp4c.html
+
