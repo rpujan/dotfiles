@@ -1,0 +1,69 @@
+Basic Movement
+==============
+h l k j
+b w			word left/right
+ge e		end of word left/right
+{ }			beginning of previous/next paragraph
+( )			beginning of previous/next sentence
+0 gm		beginning, middle of line
+^ $			first, last character of line
+nG ngg		line n, default the last, first
+nH nL		line n from start, bottom of window
+M 			middle line of window
+^u, ^d 		move up, down screen
+^b, ^f		page up, down
+zz			center this line
+zt			top this line
+zb			bottom this line
+
+Insertion & replace
+===================
+i a			insert before, after cursor
+I A			insert at beginning, end of line
+o O			open a new line below, above the current line
+r[c]		replace character under cursor with c
+R 			replace chars starting at the cursor
+cc or S		change current line
+s 			delete char and insert
+S			delete line and insert
+C 			delete until end of line and insert
+r 			replace one char
+R			Enter replace mode
+u 			undo changes
+c-r 		redo changes
+
+Deletion
+========
+x X 		delete char under, before cursor
+dd D 		delete current line, to the end of line
+J gJ		join current line with next, without space
+:rd			delete range r lines
+dw			delete word
+d2w			delete 2 words
+d7j			delete 7 lines below
+df'			delete everything in current line from cursor
+            until the first occurance of "'" (including char itself)
+dt'			same as above (excluding the char)
+d/hello		to delete everything until the first occurance of hello
+ggdG		to delete complete document
+db			delete to beginning of word
+d(in vis mod) delete selection
+2dd			delete 2 lines
+
+Clipboard
+=========
+p 			paste
+P			paste before
+"*p/"+p		paste from system clipboard
+"*y/"+y 	paste to system clipboard
+yy			copy
+
+Ex commands
+===========
+:q :q!		quit and confirm, quit and discard changes
+:qa			close all files
+:w			save
+:bd			close file without closing vim
+:bd!		close an modified file without saving it
+:wq or :x	write the current file and exit
+:n :N		edit next, previous file in list
