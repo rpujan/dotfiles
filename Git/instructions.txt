@@ -20,3 +20,7 @@ The file has instructions to setup/modify "Git bash" terminal for windows.
 
 background color : r-0, g-0, b-168
 forground color: r-255, g-255, b-255
+
+-- Dracula Theme BG
+background color : r-40, g-42, b-54
+forground color: r-255, g-255, b-255
