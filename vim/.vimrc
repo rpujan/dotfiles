@@ -7,13 +7,34 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set nu
+set relativenumber
 set nowrap
 set smartcase
 set noswapfile
 set nobackup
 " set undodir= .vim/undodir
-set undofile
+" set undofile
+set noundofile
+
 set incsearch
+
+" more powerful backspacing
+set backspace=indent,eol,start 
+
+
+" ------------- GVIM ---------------------------
+
+" hide toolbar, menubar and scrollbar
+
+set guioptions -=T
+set guioptions -=m
+set guioptions  =Ace 
+
+" set mouse disabled in gvim
+set mouse-=a
+
+" -----------------------------------------------
+
 "
 " Give more space for displaying messages.
 set cmdheight=2
@@ -23,17 +44,18 @@ set cmdheight=2
 set updatetime=50
 
 " Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
+" set shortmess+=c
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 set statusline=\PATH:\ %r%F\ \ \ \ \LINE:\ %l/%L\ TIME:\ %{strftime('%c')}
 
-set guifont=Consolas:h16
+" set guifont=Consolas:h12:b
+set guifont=Perfect\ DOS\ VGA\ 437:h12
 " set fileformat=unix
 
-call plug#begin('.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " Plug 'ycm-core/YouCompleteMe'
 Plug 'morhetz/gruvbox'
@@ -42,9 +64,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-utils/vim-man'
 " Plug 'lyuts/vim-rtags'
-Plug 'git@github.com:kien/ctrlp.vim.git'
+" Plug 'git@github.com:kien/ctrlp.vim.git'
 Plug 'mbbill/undotree'
 Plug 'preservim/nerdtree'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 colorscheme onehalflight
@@ -115,7 +138,31 @@ endfun
 autocmd BufWritePre * :call TrimWhitespace()
 autocmd FileType typescript :call GoYCM()
 autocmd FileType cpp,cxx,h,hpp,c :call GoCoc()
-autocmd FileType javascript set formatprg=prettier\ --stdin
-autocmd BufWritePre *.js :normal gggqG
+" autocmd FileType javascript set formatprg=prettier\ --stdin
+" autocmd BufWritePre *.js :normal gggqG
 
 map <C-n> :NERDTreeToggle<CR>
+
+imap jj <Esc>
+
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
+	  
+" run in full screen mode
+
+autocmd GUIEnter * simalt ~x
+
+
+autocmd filetype cpp nnoremap <C-c> :w <bar> !clear && g++ -std=gnu++11 -O2 % -o %:p:h/\%:t:r.exe && %:r.exe<CR> 
+autocmd filetype c nnoremap <C-c> :w <bar> !gcc -std=c99 -lm % -o %:p:h/%:t:r.out && ./%:r.out<CR> 
+
+let g:UltiSnipsExpandTrigger="<tab>"
+" list all snippets for current filetype
+let g:UltiSnipsListSnippets="<c-l>"
