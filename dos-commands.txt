@@ -1,0 +1,43 @@
+help						List commands (only in DOS versions 5 or later).
+help command				See help for the DOS command.
+command /?					List switches for the DOS command.
+path=c:\windows ; c:\dos	Specify in which directories DOS searches for commands or programs.
+prompt $p$g					Make the DOS prompt display the current directory.
+dir							List files in the current directory in one column.
+dir /w						List files in five columns.
+dir /p						List files one page at a time.
+dir *.ext					List all files with an .ext extension.
+dir z???.ext				List files with .ext extensions that have four letters and start with z (where z is a character of your choice).
+dir file.ext /s				Search for the file.ext in the current directory and all subdirectories under the current directory; most useful
+							if the current directory is the root (i.e., C:\).
+type file.ext				View the contents of the text file file.ext.
+edit file.ext				Use the DOS editor to edit the file file.ext.
+a:							Change to the a: drive.
+md c:\diry					Make a new subdirectory named diry in the c:\ directory.
+cd c:\diry					Change to subdirectory diry.
+rd c:\diry					Remove the existing subdirectory named diry.
+del file.ext				Delete a file named file.ext.
+ren file1 file2				Rename file file1 to file2.
+copy file1 file2			Copy file file1 to file2.
+verify on					Turn on verification of copy commands.
+verify off					Turn off verification of copy commands.
+xcopy diry1 diry2 /s		Copy all files and subdirectories in directory diry1 to diry2.
+xcopy diry1 diry2 /p		Ask for confirmation of each file before copying it from diry1 to diry2.
+diskcopy a: b:				Duplicate a disk using two floppy drives.
+diskcopy a: a:				Duplicate a disk using the same floppy drive.
+format a:					Format a disk in drive a: .
+format a: /s				Format a bootable disk (include system files).
+backup c:\diry\*.ext a:		Back up all files with the extension .ext in c:\diry\ to drive a: .
+backup c:\ a: /s			Back up the entire c: drive to drive a:.
+restore a:\ c:\diry\*.ext	Restore backed-up files with the extension .ext in drive a: to the c:\diry\ directory.
+restore a: c:\ /s			Restore backed-up files and subdirectories from drive a: to c:\.
+ver							Check the version of DOS.
+time						Check or correct the system time.
+date						Check or correct the system date.
+cls							Clear the screen.
+scandisk					Scan and check drive c: for errors. ScanDisk replaces chkdsk (see below) on DOS version 6.0 and above 
+chkdsk						Check disk and memory usage of the current disk.
+chkdsk /f					Fix errors reported by chkdsk.
+chkdsk file.ext				Check a particular file.
+chkdsk a:					Check a particular drive (in this case, a floppy in the a: drive).
+mem							Check memory usage.
