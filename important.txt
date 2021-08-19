@@ -2,3 +2,9 @@ Use this link to setup MinGW c++ in nodepad++
 ---------------------------------------------
 http://www.edparrish.net/common/npp4c.html
 
+
+Java_Compile_Run
+
+cd $(CURRENT_DIRECTORY) // go to directory of the current file
+javac $(FILE_NAME) 
+java $(NAME_PART)
