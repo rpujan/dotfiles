@@ -16,6 +16,15 @@ zz			center this line
 zt			top this line
 zb			bottom this line
 
+Jumping within a line
+---------------------
+f<char>		find a character forward in line and move to it.
+t<char>		find a character forward till .... (one char before)
+F<char>		find a character backward in line and move to it.
+T<char>		find a character backward till ... (one char before)
+;			next occurance
+,			prev occurance
+
 Insertion & replace
 ===================
 i a			insert before, after cursor
@@ -49,6 +58,9 @@ ggdG		to delete complete document
 db			delete to beginning of word
 d(in vis mod) delete selection
 2dd			delete 2 lines
+D			delete rest of line from cursor
+C			delete rest of line and insert mode
+S			delete entire line and insert mode
 
 Clipboard
 =========
