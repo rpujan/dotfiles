@@ -1,0 +1,29 @@
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.defaultProfile.windows": "C:\\Windows\\System32\\cmd.exe (migrated)",
+    "terminal.integrated.profiles.windows": {
+        "C:\\Windows\\System32\\cmd.exe (migrated)": {
+            "path": "C:\\Windows\\System32\\cmd.exe",
+            "args": []
+        }
+    },
+    "editor.fontWeight": null,
+    "code-runner.runInTerminal": true,
+    "editor.fontLigatures": null,
+    "workbench.colorTheme": "CodeSandbox",
+    "editor.fontSize": 16,
+    "editor.rulers": [
+        {
+            "column": 80,
+            "color": "#333"
+        }
+    ],
+    "terminal.integrated.tabs.location": "left",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+    
+}
