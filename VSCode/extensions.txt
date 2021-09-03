@@ -1,0 +1,12 @@
+Extensions:
+1. Auto Rename Tag
+2. Bracket Pair Colorizer
+3. Color Highlight
+4. GitLens
+5. Live Server
+6. Prettier
+7. ESLint
+
+1. Browser Preview
+2. Simple React Snippets
+3. Tailwind CSS Intellisense
