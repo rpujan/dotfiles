@@ -1,0 +1,48 @@
+Create multiple folders and subfolders from bash script
+-------------------------------------------------------
+mkdir -p {GC01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99}/{readings,notes,past_exam_papers,slides}
+
+This gives me 9 folders, starting with C01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99, where each of thse contain 5 subfolders, named readings,notes,past_exam_papers,slides.
+
+Folders and subfolders vs appending names
+-----------------------------------------
+if I've had _ instead of / then it would have looked like
+
+mkdir -p {GC01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99}_{readings,notes,past_exam_papers,slides}
+
+and there would have been no subfolders, but instead it would have appended the names, with all possible combinations, ie GC01_readings,GC02_readings etc.. all at the same folder level.
+
+This can be usefull if you append {1..10} to the file, that could give them some kind of numbering, and same thing can be done with letters {A..Z}.
+
+perhaps more usefull if you want/need to create a whole bunch of files.
+
+touch {image,pic,still,photo}_{1..100}.txt
+
+this would give you the following filesimage_1.txt, image_2.txt, image_3.txt, image_4.txt etc..
+
+even more usefull, you could create a folder with that contains a bunch of folders, numbered within a range, all containing another folder, that contains a text file.
+
+mkdir -p images/{100..110}/192x128 | touch images/{100..110}/192x128/index.md
+
+in this case the main a folder is images and it contains a bunch of folders, numbered within a range from 100..110, all containing another folder 192x128 , then we use pipe | and the touch comand to create a file, navigate back through path of directories we just created images/{100..110}/192x128/, and create a index.md in there.
+
+And where .md is a plain text markdown file.
+
+Remove all sub directories and files
+------------------------------------
+rm -rf ./**
+
+Create multiple dirs and files
+------------------------------
+mkdir -p work/index.js test/store.txt shell/script.sh
+
+How to reload .bashrc settings without logging out and back in again?
+---------------------------------------------------------------------
+You can enter the long form command:
+
+source ~/.bashrc
+
+or you can use the shorter version of the command:
+
+. ~/.bashrc
+

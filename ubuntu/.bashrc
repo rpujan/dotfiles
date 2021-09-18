@@ -131,4 +131,5 @@ alias sch='cd ~/work/Projects/Alpaca/Scheduling/React/scheduling'
 
 alias tmux='TERM=screen-256color-bce tmux'
 
-PS1='\W $ '
+# PS1='\W $ '
+PS1="\e[0;32;1m\W $ \e[m"

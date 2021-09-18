@@ -1,3 +1,5 @@
+sudo apt update
+
 Install vim
 -----------
 sudo apt install vim
@@ -28,6 +30,13 @@ gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
 
 install nodejs
 --------------
+
+sudo apt update
+sudo apt install nodejs
+sudo apt install npm
+
+  --- or ---
+
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
