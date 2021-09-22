@@ -11,8 +11,6 @@ set nowrap
 set smartcase
 set noswapfile
 set nobackup
-" set undodir= .vim/undodir
-" set undofile
 set incsearch
 "
 " Give more space for displaying messages.
@@ -52,6 +50,9 @@ colorscheme onehalfdark
 let g:airline_theme = 'onehalfdark'
 
 imap jj <Esc>
+
+nmap n :m +1<CR>
+nmap m :m -2<CR>
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',

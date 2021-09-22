@@ -1,0 +1,23 @@
+Enabling shared folders
+-----------------------
+Run the command below as root :
+
+sudo apt install virtualbox-guest-utils
+
+Once completed, exit the terminal.
+
+Now open your file explorer :
+
+You will see your shared folder but with the string “sf_” added at the beginning.
+
+If you click on the shared folder you will most likely see the error message.
+
+In order to access the shared folders, you would need to add your user to a group called vboxsf (there are users and groups). Open up your terminal and run the command below :
+
+sudo adduser [username] vboxsf
+
+Now enter the command :
+
+sudo reboot
+
+And access again your shared folder. You will be able to create/delete/change files.
