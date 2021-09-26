@@ -116,6 +116,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+mcd() {
+  mkdir -p "$1"
+  cd "$1"
+}
 
 # custom alias
 alias cls='clear'
