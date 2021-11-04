@@ -18,6 +18,10 @@ git revert
 
 Hide uncommited changes
 -----------------------
+git stash
+git stash apply
+
+
 git stash or git stash save <name>
 
 git stash list

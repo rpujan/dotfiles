@@ -8,11 +8,11 @@ ge e		end of word left/right
 ( )			beginning of previous/next sentence
 0 gm		beginning, middle of line
 ^ $			first, last character of line
-nG ngg		line n, default the last, first
+nG ngg	line n, default the last, first
 nH nL		line n from start, bottom of window
 M 			middle line of window
-^u, ^d 		move up, down screen
-^b, ^f		page up, down
+^u, ^d 	move up, down screen
+^b, ^f	page up, down
 zz			center this line
 zt			top this line
 zb			bottom this line
@@ -22,7 +22,7 @@ ddp			Move a line down
 :m -2		move up 1 lines
 
 ^E ^Y		scroll line up, down
-^D, ^U		scroll half a page down, up
+^D, ^U	scroll half a page down, up
 ^F ^B		scroll page up, down
 
 Jumping within a line
@@ -43,10 +43,10 @@ r[c]		replace character under cursor with c
 R 			replace chars starting at the cursor
 cc or S		change current line
 s 			delete char and insert
-S			delete line and insert
+S			  delete line and insert
 C 			delete until end of line and insert
 r 			replace one char
-R			Enter replace mode
+R			  Enter replace mode
 u 			undo changes
 c-r 		redo changes
 
@@ -62,21 +62,21 @@ d7j			delete 7 lines below
 df'			delete everything in current line from cursor
             until the first occurance of "'" (including char itself)
 dt'			same as above (excluding the char)
-d/hello		to delete everything until the first occurance of hello
-ggdG		to delete complete document
-db			delete to beginning of word
+d/hello	  to delete everything until the first occurance of hello
+ggdG	to delete complete document
+db		delete to beginning of word
 d(in vis mod) delete selection
-2dd			delete 2 lines
+2dd		delete 2 lines
 D			delete rest of line from cursor
 C			delete rest of line and insert mode
 S			delete entire line and insert mode
 
-dt			delete till
-di			delete inside
+dt		delete till
+di		delete inside
 
 Clipboard
 =========
-p 			paste
+p 		paste
 P			paste before
 "*p/"+p		paste from system clipboard
 "*y/"+y 	paste to system clipboard
@@ -84,7 +84,7 @@ yy			copy
 
 Ex commands
 ===========
-:q :q!		quit and confirm, quit and discard changes
+:q :q!	quit and confirm, quit and discard changes
 :qa			close all files
 :w			save
 :bd			close file without closing vim
@@ -96,7 +96,7 @@ Ex commands
 select a text/line with visual command and then shift+u to uppercase the letters.
 
 Here are some basic movement commands:
-
+-------------------------------------
 e 		Move to the end of a word.
 w 		Move forward to the beginning of a word.
 3w 		Move forward three words.

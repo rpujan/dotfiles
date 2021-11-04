@@ -1,0 +1,23 @@
+All commands are prefixed with either ^ or M character. The caret symbol (^) represents the Ctrl key. For example, the ^J commands mean to press the Ctrl and J keys at the same time. The letter M represents the Alt key.
+
+You can get a list of all commands by typing Ctrl+g.
+
+Copping, cutting, and pasting
+=============================
+To select text, move the cursor to the beginning of the text and press Alt+a. This will set a selection mark. Move the cursor to the end of the text you want to select using the arrow keys. The selected text will be highlighted. If you want to cancel the selection press Ctrl+6
+Copy the selected text to the clipboard using the Alt+6 command. Ctrl+k will cut the selected text.
+
+If you want to cut whole lines, simply move the cursor to the line and press Ctrl+k. You can cut multiple lines by hitting Ctrl+k several times.
+
+To paste the text move the cursor to where you want to put the text and press Ctrl+u.
+
+Alt+u : Undo
+Alt+e : Redo
+
+
+Saving and Exiting
+==================
+To save the changes you’ve made to the file, press Ctrl+o. If the file doesn’t already exist, it will be created once you save it.
+
+To exit nano press Ctrl+x. If there are unsaved changes, you’ll be asked whether you want to save the changes.
+
