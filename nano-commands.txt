@@ -17,7 +17,36 @@ Alt+e : Redo
 
 Saving and Exiting
 ==================
-To save the changes you’ve made to the file, press Ctrl+o. If the file doesn’t already exist, it will be created once you save it.
+To save the changes you've made to the file, press Ctrl+o. If the file doesn't already exist, it will be created once you save it.
 
 To exit nano press Ctrl+x. If there are unsaved changes, you’ll be asked whether you want to save the changes.
+
+Cursor movement:
+----------------
+To move the cursor, use the arrow keys or use the following commands:
+Ctrl-f	Moves the cursor forward one character
+Ctrl-b	Moves the cursor backward one character
+Ctrl-n	Moves the cursor down to the next line
+Ctrl-p	Moves the cursor up to the previous line
+
+Ctrl-a	Move to the beginning of the line.
+Ctrl-e	Move to the end of the line.
+Ctrl-v	Move forward one page.
+Ctrl-y	Move backward one page.
+Ctrl-d	Delete the character at the cursor position.
+Ctrl-i	Insert a tab at the cursor position.
+Ctrl-^	Mark or unmark the beginning of a block of text.
+Ctrl-k	If a block of text has been selected with a mark, cuts the entire block. Otherwise, cuts the current line.
+Ctrl-u	Paste at the cursor position the last text cut.
+Ctrl-l	Redraw the screen.
+Ctrl-w	Search for text.
+Ctrl-j	Justify the current paragraph.
+Ctrl-t	Start the spell checker.
+Ctrl-c	Report the cursor position.
+Ctrl-r	Read a file into the document at the cursor position.
+Ctrl-o	Save the file (without exiting Nano).
+Ctrl-x	Exit Nano, giving you the option to save the file.
+Ctrl-g	Get help.
+
+
 
