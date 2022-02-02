@@ -16,6 +16,28 @@ Undo a commit
 -------------
 git revert
 
+
+Remove file from staging
+------------------------
+git rm --cached <filename>
+
+
+Undo the last commit with:
+-------------------------
+git reset --soft HEAD~1
+move the mistakenly committed files back to the staging area
+
+
+Add patch of file
+-----------------
+git add -p <filename>
+
+
+Open commit dialog
+-------------------
+git commit <enter>
+
+
 Hide uncommited changes
 -----------------------
 git stash
@@ -46,10 +68,6 @@ How to list committed files that are going to push?
 ---------------------------------------------------
 git show <commitid> --name-only
 
-Undo the last commit with:
--------------------------
-git reset --soft HEAD~1
-move the mistakenly committed files back to the staging area
 
 start a new Git repo for an existing code base
 ----------------------------------------------
@@ -60,9 +78,6 @@ git commit
 
 git status
 
-Remove file from staging
-------------------------
-git rm --cached <filename>
 
 If we want to compare specific files between two different commits:
 ------------------------------------------------------------------
@@ -93,7 +108,7 @@ Change message of last commit
 git commit --amend -m "revised message!"
 
 you can also push files if you mistakenly forgot earlier
-
+--------------------------------------------------------
 git add .
 git commit --amend -m "more files added"
 
