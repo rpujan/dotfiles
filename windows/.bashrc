@@ -127,16 +127,23 @@ alias home='cd ~'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../../..'
-alias work='cd c:/work'
-alias projects='cd c:/work/Projects'
-alias alpaca='cd c:/work/Projects/Alpaca'
-alias abi='cd c:/work/Projects/Alpaca/ABI/React/abi'
-alias sch='cd c:/work/Projects/Alpaca/Scheduling/React/scheduling'
+alias work='cd c:/Work'
+alias projects='cd c:/Work/Projects'
+alias alpaca='cd c:/Work/Projects/Alpaca'
+alias abi='cd c:/Work/Projects/Alpaca/ABI'
+alias sch='cd c:/Work/Projects/Alpaca/Scheduling'
+alias misc='cd c:/Work/Projects/Misc'
 
 alias tmux='TERM=screen-256color-bce tmux'
 
+
+# Git alias
+alias gitlog='git log --pretty=tformat:"%C(yellow)%h %C(cyan)%ad %Cblue%an%C(auto)%d %Creset%s" --date=format:"%Y-%m-%d %H:%M"'
+
+
+
 # PS1='\W $ '
-# PS1="\e[01;32;1m\W $ \e[m"
+PS1="\e[01;32;1m\W $ __git_ps1 \e[m"
 
 source ~/.git-prompt.sh
 
@@ -145,6 +152,8 @@ cd C:/Work/Projects;
 __PS1_BEFORE='\n'
 # __PS1_USER='\[\e[97;104m\] \u '
 __PS1_LOCATION='\[\e[30;103m\] \w '
-__PS1_GIT_BRANCH='\[\e[97;45m\] `__git_ps1` '
+__PS1_GIT_BRANCH='\[\e[97;45m\]`__git_ps1`'
 __PS1_AFTER='\[\e[0m\]\n'
-export PS1="${__PS1_BEFORE}${__PS1_LOCATION}${__PS1_GIT_BRANCH}${__PS1_AFTER}"
+# export PS1="${__PS1_BEFORE}${__PS1_LOCATION}${__PS1_GIT_BRANCH}${__PS1_AFTER}"
+
+# eval "$(~/.oh-my-posh/oh-my-posh --init --shell bash --config ~/.oh-my-posh/themes/material.omp.json)"

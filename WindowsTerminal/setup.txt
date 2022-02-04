@@ -1,0 +1,6 @@
+https://zimmergren.net/making-windows-terminal-look-awesome-with-oh-my-posh/
+
+1. Download Windows Terminal from Microsoft store
+2. Unzip font zip and install font
+
+If Powershell throws error, try using admin privilege to install
