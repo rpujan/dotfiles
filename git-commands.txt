@@ -113,4 +113,13 @@ git add .
 git commit --amend -m "more files added"
 
 
+If you want to see some abbreviated stats for each commit, you can use the --stat option:
+-----------------------------------------------------------------------------------------
+$ git log --stat
 
+
+
+case-1 : merge-conflict
+-----------------------
+1. Make a repo at your github account.
+2. Clone in in local with two seprate locations with different local git settings.
