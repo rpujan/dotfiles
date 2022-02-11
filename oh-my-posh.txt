@@ -1,0 +1,20 @@
+Powershell customization with Oh My Posh
+========================================
+
+1. Run Powershell in admin mode.
+
+2. Run: Install-Module oh-my-posh -Scope CurrentUser
+
+3. Run: Install-Module posh-git -Scope CurrentUser
+
+4. Run: notepad $profile
+
+5. In file add following lines
+
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-PoshPrompt -Theme material
+  
+6. Run powershell again, if it gives error, run following command
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
