@@ -30,6 +30,9 @@ set updatetime=250
 set encoding=UTF-8
 set mouse=a
 
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
 call plug#begin('~/AppData/Local/nvim/plugged')
 
 " General
@@ -63,10 +66,29 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " Theme
 Plug 'sainnhe/gruvbox-material'
+Plug 'vim-airline/vim-airline'
+Plug 'rafi/awesome-vim-colorschemes'    " Retro Scheme
+
+Plug 'ap/vim-css-color'                 " CSS Color Preview
+Plug 'preservim/tagbar'                 " Tagbar for code navigation
+Plug 'ryanoasis/vim-devicons'           " Developer Icons
+Plug 'tpope/vim-commentary'             " For Commenting gcc & gc
+
+Plug 'preservim/nerdtree'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()
 
 " --- Colors
 set background=dark
 set termguicolors
-colorscheme tokyonight 
+" colorscheme tokyonight
+color gruvbox-material
+
+" Insert a newline without entering in insert mode
+nmap oo o<Esc>k
+nmap OO O<Esc>j
+
+nmap <F8> :TagbarToggle<CR>
+
+imap jj <Esc>
