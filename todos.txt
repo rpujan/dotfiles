@@ -1,0 +1,87 @@
+- Javascript ES6
+- React Js
+- .Net Core
+- Git
+- Vim
+- Bash command line
+
+******************************
+    J A V A   S C R I P T
+******************************
+
+- Variable declaration and data types
+
+- Functions
+  - Arrow function expressions
+  - Default parameters
+  - getter
+  - setter
+  - Rest parameter
+
+- loops
+- async javascript
+- promise
+- async/await function
+- DOM manipulation/insertion
+- functional javascript
+
+Array and its methods:
+----------------------
+  some()
+  every()
+  reduce()
+  map()
+  flat()
+  filter()
+  forEach()
+  findIndex()
+  find()
+  sort()
+  concat()
+  fill()
+  includes()
+  reverse()
+  flatMap()
+
+
+Important string methods:
+-------------------------
+  charAt(x)
+  concat(v1,v2..)
+  indexOf(substr, [start])
+  replace(regexp/substr, replacetext)
+  search(regexp)
+  slice(start, [end])
+  split(delimiter, [limit])
+  substr(start, [length])
+  substring(from, [to])
+  toLowerCase()
+  toUpperCase()
+  includes()
+  endsWith()
+  repeat()
+  trim()
+
+
+Important Date methods:
+-----------------------
+getFullYear()	    Get the year as a four digit number (yyyy)
+getMonth()	      Get the month as a number (0-11)
+getDate()	        Get the day as a number (1-31)
+getHours()	      Get the hour (0-23)
+getMinutes()	    Get the minute (0-59)
+getSeconds()	    Get the second (0-59)
+getMilliseconds()	Get the millisecond (0-999)
+getTime()	        Get the time (milliseconds since January 1, 1970)
+getDay()	        Get the weekday as a number (0-6)
+Date.now()	      Get the time. ECMAScript 6.
+
+getUTCFullYear()	Same as getFullYear(), but returns the UTC year
+getUTCMonth()	    Same as getMonth(), but returns the UTC month
+getUTCDate()	    Same as getDate(), but returns the UTC date
+getUTCHours()	    Same as getHours(), but returns the UTC hour
+getUTCMinutes()	  Same as getMinutes(), but returns the UTC minutes
+getUTCSeconds()	  Same as getSeconds(), but returns the UTC seconds
+getUTCMilliseconds()	Same as getMilliseconds(), but returns the UTC milliseconds
+getUTCDay()	      Same as getDay(), but returns the UTC day
+
