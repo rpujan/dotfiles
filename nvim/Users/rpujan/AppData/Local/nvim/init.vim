@@ -76,6 +76,7 @@ Plug 'tpope/vim-commentary'             " For Commenting gcc & gc
 
 Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -92,3 +93,13 @@ nmap OO O<Esc>j
 nmap <F8> :TagbarToggle<CR>
 
 imap jj <Esc>
+
+" Make background transparent
+" hi Normal guibg=none ctermbg=none
+" hi LineNr guibg=none ctermbg=none
+" hi Folded guibg=none ctermbg=none
+" hi NonText guibg=none ctermbg=none
+" hi SpecialKey guibg=none ctermbg=none
+" hi VertSplit guibg=none ctermbg=none
+" hi SignColumn guibg=none ctermbg=none
+" hi EndOfBuffer guibg=none ctermbg=none
