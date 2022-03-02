@@ -1,3 +1,4 @@
+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
 git config --local user.name "test"
 git config --local user.email test@gmail.com
 git config --local mergetool.fugitive.cmd 'nvim -f -c "Gvdiffsplit!" "$MERGED"'
