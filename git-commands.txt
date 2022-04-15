@@ -119,6 +119,16 @@ If you want to see some abbreviated stats for each commit, you can use the --sta
 $ git log --stat
 
 
+How do I list all of the files in a commit?
+-------------------------------------------
+git show --pretty="" --name-only <commit-id>
+
+git show --name-only --oneline <commit-id>
+
+
+
+
+git show HEAD@{0}
 
 case-1 : merge-conflict
 -----------------------
