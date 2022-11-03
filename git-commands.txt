@@ -1,4 +1,5 @@
-ghp_ wrjtiT3D9 SF7nyJdJwYxxiHIADezs Y1gcJHu
+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
+
 git config --local user.name "test"
 git config --local user.email test@gmail.com
 git config --local mergetool.fugitive.cmd 'nvim -f -c "Gvdiffsplit!" "$MERGED"'
@@ -12,6 +13,23 @@ git log --oneline
 git log --pretty=oneline
 git log --pretty=format:"%h %s" --graph
 git log --graph --oneline --decorate
+git log --pretty=format:"%h - %an, %ar : %s"
+git log --pretty=tformat:"%C(yellow)%h %C(cyan)%ad %Cblue%an%C(auto)%d %Creset%s" --date=format:"%Y-%m-%d %H:%M"
+git log --pretty=format:"%C(#ff781f)%h %C(white)%ad %C(green)%an %C(reset)%s" --date=format:"%Y-%m-%d %H:%M"
+
+git log --graph --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(cyan)<%an>%Creset' --abbrev-commit
+
+
+By Amount     git log -3
+
+By Date       git log --after="2014-7-1"
+              git log --after="yesterday"
+              git log --after="2014-7-1" --before="2014-7-4"
+ 
+By Author     git log --author="John"
+              git log --author="John\|Mary"
+
+
 
 Undo a commit
 -------------
