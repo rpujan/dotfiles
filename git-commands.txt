@@ -30,6 +30,9 @@ By Author     git log --author="John"
               git log --author="John\|Mary"
 
 
+Shallow clone
+-------------
+git clone -depth=1 <repo>
 
 Undo a commit
 -------------
