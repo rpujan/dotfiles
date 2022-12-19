@@ -29,6 +29,10 @@ sudo apt install gnome-shell-extension-pixelsaver
 gnome-extensions enable pixel-saver@deadalnix.me
 gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
 
+or 
+
+gsettings set org.gnome.Terminal.Legacy.Settings headerbar "@mb false"
+
 install nodejs
 --------------
 
