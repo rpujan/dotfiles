@@ -155,3 +155,15 @@ case-1 : merge-conflict
 -----------------------
 1. Make a repo at your github account.
 2. Clone in in local with two seprate locations with different local git settings.
+
+
+Unstaging a Staged File
+-----------------------
+git reset HEAD <file>...        (old)
+git restore --staged <file>...  (New)
+
+
+Unmodifying a Modified File
+---------------------------
+git checkout -- <file>...       (old)
+git restore <file>...           (New)
