@@ -1,0 +1,129 @@
+Wget
+====
+# wget [option] [URL]
+
+-> Download a File with Wget
+# wget http://ftp.gnu.org/gnu/wget/wget2-2.0.0.tar.gz
+
+-> Wget Download File with Different Name
+Using -O (uppercase) option
+
+# wget -O wget.zip http://ftp.gnu.org/gnu/wget/wget2-2.0.0.tar.gz
+
+-> Wget Download Multiple Files with HTTP and FTP Protocol
+$ wget http://ftp.gnu.org/gnu/wget/wget2-2.0.0.tar.gz 
+ftp://ftp.gnu.org/gnu/wget/wget2-2.0.0.tar.gz.sig
+
+->Wget Download Multiple Files From a File
+To download multiple files at once, use the -i option with the location of the file that contains the list of URLs to be downloaded. Each URL needs to be added on a separate line as shown.
+
+# cat download-linux.txt 
+
+https://releases.ubuntu.com/20.04.3/ubuntu-20.04.3-desktop-amd64.iso
+https://download.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.5-x86_64-dvd1.iso
+https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-11.2.0-amd64-DVD-1.iso
+
+wget -i download-linux.txt
+
+->Wget Mirror Entire Website
+To download or mirror or copy an entire website for offline viewing, you can use use the following command that will make a local copy of the website along with all the assets (JavaScript, CSS, Images).
+
+$ wget --recursive --page-requisites --adjust-extension --span-hosts --convert-links --restrict-file-names=windows --domains yoursite.com --no-parent yoursite.com
+
+Explanation of the above command.
+
+wget \
+     --recursive \ # Download the whole site.
+     --page-requisites \ # Get all assets/elements (CSS/JS/images).
+     --adjust-extension \ # Save files with .html on the end.
+     --span-hosts \ # Include necessary assets from offsite as well.
+     --convert-links \ # Update links to still work in the static version.
+     --restrict-file-names=windows \ # Modify filenames to work in Windows as well.
+     --domains yoursite.com \ # Do not follow links outside this domain.
+     --no-parent \ # Don't follow links outside the directory you pass in.
+         yoursite.com/whatever/path # The URL to download
+		 
+
+->Wget Download Files in Background
+With -b option you can send download in the background immediately after download start and logs are written in wget.log file.
+
+$ wget -b wget.log https://releases.ubuntu.com/20.04.3/ubuntu-20.04.3-desktop-amd64.iso
+
+Continuing in background, pid 8999.
+Output will be written to ‘wget.log’.
+
+->Wget Download Password Protected Files via FTP and HTTP
+
+To download a file from a password-protected FTP server, you can use the options --ftp-user=username and --ftp-password=password as shown.
+
+$ wget --ftp-user=narad --ftp-password=password ftp://ftp.example.com/filename.tar.gz
+
+To download a file from a password-protected HTTP server, you can use the options --http-user=username and --http-password=password as shown.
+
+$ wget --http-user=narad --http-password=password http://http.example.com/filename.tar.gz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
