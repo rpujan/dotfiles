@@ -4,6 +4,9 @@
 - Git
 - Vim
 - Bash command line
+- Lodash
+- Typescript
+- Linq
 
 ******************************
     J A V A   S C R I P T
@@ -85,3 +88,56 @@ getUTCSeconds()	  Same as getSeconds(), but returns the UTC seconds
 getUTCMilliseconds()	Same as getMilliseconds(), but returns the UTC milliseconds
 getUTCDay()	      Same as getDay(), but returns the UTC day
 
+
+
+Linq Operators
+---------------
+Where
+OrderBy
+Aggregate
+Average
+Count
+Max
+Min
+Sum
+First
+FirstOrDefault
+Distinct
+Last
+LastOrDefault
+Range
+Empty
+Repeat
+Except
+Skip
+SkipWhile
+Union
+All
+Any
+Contains
+GroupBy
+Then
+Join
+
+
+Lodash
+------
+orderBy
+take
+map
+sortBy
+clone
+cloneDeep
+debounce
+find
+reduce
+uniq
+slice
+flatten
+flattenDeep
+
+countBy
+every
+groupBy
+reduce
+SortBy
