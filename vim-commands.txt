@@ -33,6 +33,8 @@ F<char>        find a character backward in line and move to it.
 T<char>        find a character backward till ... (one char before)
 ;              next occurance
 ,              prev occurance
+ctrl+o         Navigate to the previous location in the jump list.
+ctrl+i         Navigate to the next location in the jump list.
 
 Insertion & replace
 ===================
