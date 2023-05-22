@@ -35,6 +35,11 @@ T<char>        find a character backward till ... (one char before)
 ,              prev occurance
 ctrl+o         Navigate to the previous location in the jump list.
 ctrl+i         Navigate to the next location in the jump list.
+g;             go to the previous change location
+g,             go to the newer change location
+gi             place the cursor at the same position where it was left last
+               time in the insert mode
+:jumps         to view the jump list
 
 Insertion & replace
 ===================
