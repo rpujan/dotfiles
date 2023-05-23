@@ -169,4 +169,14 @@ Search word nearest to the cursor
 g* : searches the word nearest to the cursor in the forward direction (matches as part of another word as well)
 g# : searches the word nearest to the cursor in the backward direction (matches as part of another word as well)
 
+Move screen without moving cursor
+---------------------------------
+Ctrl-y Moves screen up one line
+Ctrl-e Moves screen down one line
+Ctrl-u Moves cursor & screen up ½ page
+Ctrl-d Moves cursor & screen down ½ page
+Ctrl-b Moves screen up one page, cursor to last line
+Ctrl-f Moves screen down one page, cursor to first line
+
+Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
 
