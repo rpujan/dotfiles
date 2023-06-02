@@ -180,3 +180,8 @@ Ctrl-f Moves screen down one page, cursor to first line
 
 Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
 
+Suspend and resume
+------------------
+Ctrl+Z : to suspend vim and go back to shell
+fg     : resume
+
