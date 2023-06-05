@@ -1,0 +1,464 @@
+string greeting;
+int a, b, c;
+List<double> xs;
+string greeting = "Hello";
+int a = 3, b = 2, c = a + b;
+List<double> xs = new();
+const string Greeting = "Hello";
+const double MinLimit = -10.0, MaxLimit = -MinLimit;
+var greeting = "Hello";
+Console.WriteLine(greeting.GetType());
+var a = 32;
+Console.WriteLine(a.GetType());
+var xs = new List<double>();
+Console.WriteLine(xs.GetType());
+
+using System;
+
+class NumberStore
+{
+    int[] numbers = { 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023 };
+
+    public ref int FindNumber(int target)
+    {
+        for (int ctr = 0; ctr < numbers.Length; ctr++)
+        {
+            if (numbers[ctr] >= target)
+                return ref numbers[ctr];
+        }
+        return ref numbers[0];
+    }
+
+    public override string ToString() => string.Join(" ", numbers);
+}
+if (shapeAmount <= 0)
+{
+    throw new ArgumentOutOfRangeException(nameof(shapeAmount), "Amount of shapes must be positive.");
+}
+try
+{
+    ProcessShapes(shapeAmount);
+}
+catch (Exception e)
+{
+    LogError(e, "Shape processing failed.");
+    throw;
+}
+The throw expression
+You can also use throw as an expression. This might be convenient in a number of cases, which include:
+
+the conditional operator. The following example uses a throw expression to throw an ArgumentException when the passed array args is empty:
+
+C#
+
+Copy
+string first = args.Length >= 1 
+    ? args[0]
+    : throw new ArgumentException("Please supply at least one argument.");
+the null-coalescing operator. The following example uses a throw expression to throw an ArgumentNullException when the string to assign to a property is null:
+
+C#
+
+Copy
+public string Name
+{
+    get => name;
+    set => name = value ??
+        throw new ArgumentNullException(paramName: nameof(value), message: "Name cannot be null");
+}
+an expression-bodied lambda or method. The following example uses a throw expression to throw an InvalidCastException to indicate that a conversion to a DateTime value is not supported:
+
+C#
+
+Copy
+DateTime ToDateTime(IFormatProvider provider) =>
+         throw new InvalidCastException("Conversion to a DateTime is not supported.");
+The try statement
+You can use the try statement in any of the following forms: try-catch - to handle exceptions that might occur during execution of the code inside a try block, try-finally - to specify the code that is executed when control leaves the try block, and try-catch-finally - as a combination of the preceding two forms.
+
+The try-catch statement
+Use the try-catch statement to handle exceptions that might occur during execution of a code block. Place the code where an exception might occur inside a try block. Use a catch clause to specify the base type of exceptions you want to handle in the corresponding catch block:
+
+C#
+
+Copy
+try
+{
+    var result = Process(-3, 4);
+    Console.WriteLine($"Processing succeeded: {result}");
+}
+catch (ArgumentException e)
+{
+    Console.WriteLine($"Processing failed: {e.Message}");
+}
+You can provide several catch clauses:
+
+C#
+
+Copy
+try
+{
+    var result = await ProcessAsync(-3, 4, cancellationToken);
+    Console.WriteLine($"Processing succeeded: {result}");
+}
+catch (ArgumentException e)
+{
+    Console.WriteLine($"Processing failed: {e.Message}");
+}
+catch (OperationCanceledException)
+{
+    Console.WriteLine("Processing is cancelled.");
+}
+When an exception occurs, catch clauses are examined in the specified order, from top to bottom. At maximum, only one catch block is executed for any thrown exception. As the preceding example also shows, you can omit declaration of an exception variable and specify only the exception type in a catch clause. A catch clause without any specified exception type matches any exception and, if present, must be the last catch clause.
+
+If you want to re-throw a caught exception, use the throw statement, as the following example shows:
+
+C#
+
+Copy
+try
+{
+    var result = Process(-3, 4);
+    Console.WriteLine($"Processing succeeded: {result}");
+}
+catch (Exception e)
+{
+    LogError(e, "Processing failed.");
+    throw;
+}
+ Note
+
+throw; preserves the original stack trace of the exception, which is stored in the Exception.StackTrace property. Opposite to that, throw e; updates the StackTrace property of e.
+
+A when exception filter
+Along with an exception type, you can also specify an exception filter that further examines an exception and decides if the corresponding catch block handles that exception. An exception filter is a Boolean expression that follows the when keyword, as the following example shows:
+
+C#
+
+Copy
+try
+{
+    var result = Process(-3, 4);
+    Console.WriteLine($"Processing succeeded: {result}");
+}
+catch (Exception e) when (e is ArgumentException || e is DivideByZeroException)
+{
+    Console.WriteLine($"Processing failed: {e.Message}");
+}
+The preceding example uses an exception filter to provide a single catch block to handle exceptions of two specified types.
+
+You can provide several catch clauses for the same exception type if they distinguish by exception filters. One of those clauses might have no exception filter. If such a clause exists, it must be the last of the clauses that specify that exception type.
+
+If a catch clause has an exception filter, it can specify the exception type that is the same as or less derived than an exception type of a catch clause that appears after it. For example, if an exception filter is present, a catch (Exception e) clause doesn't need to be the last clause.
+
+Exceptions in async and iterator methods
+If an exception occurs in an async function, it propagates to the caller of the function when you await the result of the function, as the following example shows:
+
+C#
+
+Copy
+public static async Task Run()
+{
+    try
+    {
+        Task<int> processing = ProcessAsync(-1);
+        Console.WriteLine("Launched processing.");
+
+        int result = await processing;
+        Console.WriteLine($"Result: {result}.");
+    }
+    catch (ArgumentException e)
+    {
+        Console.WriteLine($"Processing failed: {e.Message}");
+    }
+    // Output:
+    // Launched processing.
+    // Processing failed: Input must be non-negative. (Parameter 'input')
+}
+
+private static async Task<int> ProcessAsync(int input)
+{
+    if (input < 0)
+    {
+        throw new ArgumentOutOfRangeException(nameof(input), "Input must be non-negative.");
+    }
+
+    await Task.Delay(500);
+    return input;
+}
+If an exception occurs in an iterator method, it propagates to the caller only when the iterator advances to the next element.
+
+The try-finally statement
+In a try-finally statement, the finally block is executed when control leaves the try block. Control might leave the try block as a result of
+execution of a jump statement (that is, return, break, continue, or goto), or
+propagation of an exception out of the try block.
+The following example uses the finally block to reset the state of an object before control leaves the method:
+public async Task HandleRequest(int itemId, CancellationToken ct)
+{
+    Busy = true;
+
+    try
+    {
+        await ProcessAsync(itemId, ct);
+    }
+    finally
+    {
+        Busy = false;
+    }
+}
+You can also use the finally block to clean up allocated resources used in the try block.
+e type of a resource implements the IDisposable or IAsyncDisposable interface, consider the using statement. The using statement ensures that acquired resources are disposed when control leaves the using statement. The compiler transforms a using statement into a try-finally statement.
+In almost all cases finally blocks are executed. The only cases where finally blocks aren't executed involve immediate termination of a program. For example, such a termination might happen because of the Environment.FailFast call or an OverflowException or InvalidProgramException exception. Most operating systems perform a reasonable resource clean-up as part of stopping and unloading the process.
+The try-catch-finally statement
+You use a try-catch-finally statement both to handle exceptions that might occur during execution of the try block and specify the code that must be executed when control leaves the try statement:
+public async Task ProcessRequest(int itemId, CancellationToken ct)
+{
+    Busy = true;
+    try
+    {
+        await ProcessAsync(itemId, ct);
+    }
+    catch (Exception e) when (e is not OperationCanceledException)
+    {
+        LogError(e, $"Failed to process request for item ID {itemId}.");
+        throw;
+    }
+    finally
+    {
+        Busy = false;
+    }
+}
+When an exception is handled by a catch block, the finally block is executed after execution of that catch block (even if another exception occurs during execution of the catch block). For information about catch and finally blocks, see The try-catch statement and The try-finally statement sections, respectively.
+var fibNumbers = new List<int> { 0, 1, 1, 2, 3, 5, 8, 13 };
+foreach (int element in fibNumbers)
+{
+    Console.Write($"{element} ");
+}
+DisplayWeatherReport(15.0);
+DisplayWeatherReport(24.0);
+
+void DisplayWeatherReport(double tempInCelsius)
+{
+    if (tempInCelsius < 20.0)
+    {
+        Console.WriteLine("Cold.");
+    }
+    else
+    {
+        Console.WriteLine("Perfect!");
+    }
+}
+DisplayCharacter('f');
+DisplayCharacter('R');
+DisplayCharacter('8');
+DisplayCharacter(',');
+
+void DisplayCharacter(char ch)
+{
+    if (char.IsUpper(ch))
+    {
+        Console.WriteLine($"An uppercase letter: {ch}");
+    }
+    else if (char.IsLower(ch))
+    {
+        Console.WriteLine($"A lowercase letter: {ch}");
+    }
+    else if (char.IsDigit(ch))
+    {
+        Console.WriteLine($"A digit: {ch}");
+    }
+    else
+    {
+        Console.WriteLine($"Not alphanumeric character: {ch}");
+    }
+}
+DisplayMeasurement(-4);
+DisplayMeasurement(50);
+DisplayMeasurement(132);
+
+void DisplayMeasurement(int measurement)
+{
+    switch (measurement)
+    {
+        case < 0:
+        case > 100:
+            Console.WriteLine($"Measured value is {measurement}; out of an acceptable range.");
+            break;
+        
+        default:
+            Console.WriteLine($"Measured value is {measurement}.");
+            break;
+    }
+}
+int[] numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+foreach (int number in numbers)
+{
+    if (number == 3)
+    {
+        break;
+    }
+
+    Console.Write($"{number} ");
+}
+Console.WriteLine();
+Console.WriteLine("End of the example.");
+// Output:
+// 0 1 2 
+// End of the example.
+for (int outer = 0; outer < 5; outer++)
+{
+    for (int inner = 0; inner < 5; inner++)
+    {
+        if (inner > outer)
+        {
+            break;
+        }
+
+        Console.Write($"{inner} ");
+    }
+    Console.WriteLine();
+}
+// Output:
+// 0
+// 0 1
+// 0 1 2
+// 0 1 2 3
+// 0 1 2 3 4
+double[] measurements = { -4, 5, 30, double.NaN };
+foreach (double measurement in measurements)
+{
+    switch (measurement)
+    {
+        case < 0.0:
+            Console.WriteLine($"Measured value is {measurement}; too low.");
+            break;
+
+        case > 15.0:
+            Console.WriteLine($"Measured value is {measurement}; too high.");
+            break;
+
+        case double.NaN:
+            Console.WriteLine("Failed measurement.");
+            break;
+
+        default:
+            Console.WriteLine($"Measured value is {measurement}.");
+            break;
+    }
+}
+// Output:
+// Measured value is -4; too low.
+// Measured value is 5.
+// Measured value is 30; too high.
+// Failed measurement.
+Console.WriteLine("First call:");
+DisplayIfNecessary(6);
+
+Console.WriteLine("Second call:");
+DisplayIfNecessary(5);
+
+void DisplayIfNecessary(int number)
+{
+    if (number % 2 == 0)
+    {
+        return;
+    }
+
+    Console.WriteLine(number);
+}
+// Output:
+// First call:
+// Second call:
+// 5
+var xs = new int[] { 10, 20, 30, 40 };
+ref int found = ref FindFirst(xs, s => s == 30);
+found = 0;
+Console.WriteLine(string.Join(" ", xs));  // output: 10 20 0 40
+
+ref int FindFirst(int[] numbers, Func<int, bool> predicate)
+{
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (predicate(numbers[i]))
+        {
+            return ref numbers[i];
+        }
+    }
+    throw new InvalidOperationException("No element satisfies the given condition.");
+}
+using System;
+
+public enum CoffeeChoice
+{
+    Plain,
+    WithMilk,
+    WithIceCream,
+}
+public class GotoInSwitchExample
+{
+    public static void Main()
+    {
+        Console.WriteLine(CalculatePrice(CoffeeChoice.Plain));  // output: 10.0
+        Console.WriteLine(CalculatePrice(CoffeeChoice.WithMilk));  // output: 15.0
+        Console.WriteLine(CalculatePrice(CoffeeChoice.WithIceCream));  // output: 17.0
+    }
+    private static decimal CalculatePrice(CoffeeChoice choice)
+    {
+        decimal price = 0;
+        switch (choice)
+        {
+            case CoffeeChoice.Plain:
+                price += 10.0m;
+                break;
+
+            case CoffeeChoice.WithMilk:
+                price += 5.0m;
+                goto case CoffeeChoice.Plain;
+
+            case CoffeeChoice.WithIceCream:
+                price += 7.0m;
+                goto case CoffeeChoice.Plain;
+        }
+        return price;
+    }
+}
+uint a = uint.MaxValue;
+unchecked
+{
+    Console.WriteLine(a + 3);  // output: 2
+}
+try
+{
+    checked
+    {
+        Console.WriteLine(a + 3);
+    }
+}
+catch (OverflowException e)
+{
+    Console.WriteLine(e.Message);  // output: Arithmetic operation resulted in an overflow.
+}
+int Multiply(int a, int b) => a * b;
+int factor = 2;
+try
+{
+    checked
+    {
+        Console.WriteLine(Multiply(factor, int.MaxValue));  // output: -2
+    }
+}
+catch (OverflowException e)
+{
+    Console.WriteLine(e.Message);
+}
+try
+{
+    checked
+    {
+        Console.WriteLine(Multiply(factor, factor * int.MaxValue));
+    }
+}
+catch (OverflowException e)
+{
+    Console.WriteLine(e.Message);  // output: Arithmetic operation resulted in an overflow.
+}
