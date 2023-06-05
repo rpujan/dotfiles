@@ -1,0 +1,61 @@
+Standard problem on Array:
+
+Easy
+====
+1. Find the largest three elements in an array.
+2. Find Second largest element in an array.
+3. Move all zeroes to end of array.
+4. Rearrange array such that even positioned are greater than odd.
+5. Rearrange an array in maximum minimum form using Two Pointer Technique.
+6. Segregate even and odd numbers.
+7. Reversal algorithm for array rotation.
+8. Print left rotation of array in O(n) time and O(1) space.
+9. Sort an array in wave form.
+10. Sort an array which contain 1 to n values.
+11. Count the number of possible triangles.
+12. Print All Distinct Elements of a given integer array.
+13. Find the element that appears once in Array where every other element appears twice.
+14. Leaders in an array.
+15. Find sub-array with given sum.
+
+Medium
+======
+1. Rearrange an array such that arr[i] = i.
+2. Rearrange positive and negative numbers in O(n) time and O(1) extra space.
+3. Reorder an array according to given indexes.
+4. Search an element in a sorted and rotated array.
+5. Find the Rotation Count in Rotated Sorted array.
+6. K-th Largest Sum Contiguous Subarray.
+7. Find the smallest missing number.
+8. Difference Array | Range update query in O(1).
+9. Maximum profit by buying and selling a share at most twice.
+10. Smallest subarray with sum greater than a given value.
+1.Inversion count in Array using Merge Sort.
+2. Sort an array of 0s, 1s and 2s.
+3. Merge two sorted arrays with O(1) extra space.
+4. Majority Element.
+5. Two Pointers Technique.
+6. Find a peak element.
+7. Find a triplet that sum to a given value.
+8. Minimum increment by k operations to make all elements equal.
+9. Equilibrium index of an array.
+
+Hard
+====
+1. Find k numbers with most occurrences in the given array
+2. MO’s Algorithm
+3. Square Root (Sqrt) Decomposition Algorithm
+4. Sparse Table
+5. Range sum query using Sparse Table
+6. Range Minimum Query (Square Root Decomposition and Sparse Table)
+7. Range LCM Queries
+8. Merge Sort Tree for Range Order Statistics
+9. Minimum number of jumps to reach end
+10. Space optimization using bit manipulations
+11. Sort a nearly sorted (or K sorted) array
+12. Find maximum value of Sum( i*arr[i]) with only rotations on given array allowed
+13. Median in a stream of integers (running integers)
+14. Construct an array from its pair-sum array
+15. Maximum equlibrium sum in an array
+16. Smallest Difference Triplet from Three arrays
+17. Find all triplets with zero sum

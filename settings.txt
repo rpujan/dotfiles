@@ -72,3 +72,5 @@ install tmux
 ------------
 sudo apt install tmux
 
+
+Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
