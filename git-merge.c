@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include <conio.h>
 
 #include <openssl/engine.h>
 #include <openssl/async.h>
@@ -37,6 +38,7 @@
 void engine_load_afalg_int(void);
 void engine_load_afalg_int(void)
 {
+    return;
 }
 #else
 
