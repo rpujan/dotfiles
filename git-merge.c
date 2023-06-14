@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include <conio.h>
 
 #include <openssl/engine.h>
 #include <openssl/async.h>
@@ -37,6 +38,7 @@
 void engine_load_afalg_int(void);
 void engine_load_afalg_int(void)
 {
+    return;
 }
 #else
 
@@ -240,7 +242,22 @@ static int afalg_setup_async_event_notification(afalg_aio *aio)
     }
     return 1;
 }
+static int checkIfNotDeleted(string name)
+{
+    int deleted = false;
+    for(int i = 0; i < dir.size; i++)
+    {
+        // check in dir that files exist
+        if(exist)
+            return true;
 
+        return false;
+    }
+}
+static string greeting(char[] message)
+{
+    return message;
+}
 static int afalg_init_aio(afalg_aio *aio)
 {
     int r = -1;
