@@ -254,6 +254,10 @@ static int checkIfNotDeleted(string name)
         return false;
     }
 }
+static string greeting(char[] message)
+{
+    return message;
+}
 static int afalg_init_aio(afalg_aio *aio)
 {
     int r = -1;
