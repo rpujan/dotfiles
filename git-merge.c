@@ -18,7 +18,6 @@
 #include <string.h>
 #include <unistd.h>
 #include <conio.h>
-
 #include <openssl/engine.h>
 #include <openssl/async.h>
 #include <openssl/err.h>
@@ -242,7 +241,10 @@ static int afalg_setup_async_event_notification(afalg_aio *aio)
     }
     return 1;
 }
-
+static string greeting(char[] message)
+{
+    return message;
+}
 static int afalg_init_aio(afalg_aio *aio)
 {
     int r = -1;
