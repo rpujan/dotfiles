@@ -190,3 +190,13 @@ Copy Paste
 Copy: ya{([ or yi{([
 move: 3j
 paste: viw or viW
+
+Advanced Features:
+-----------------
+- Auto-complete
+- Buffers
+- Recording
+- : norm
+- : ! command
+- Open files / URLs with gf / gx
+
