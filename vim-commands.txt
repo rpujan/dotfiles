@@ -185,3 +185,8 @@ Suspend and resume
 Ctrl+Z : to suspend vim and go back to shell
 fg     : resume
 
+Copy Paste
+----------
+Copy: ya{([ or yi{([
+move: 3j
+paste: viw or viW
