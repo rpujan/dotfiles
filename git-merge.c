@@ -952,7 +952,7 @@ static int afalg_finish(ENGINE *e)
 {
     return 1;
 }
-
+/*
 static int free_cbc(void)
 {
     short unsigned int i;
@@ -962,7 +962,7 @@ static int free_cbc(void)
     }
     return 1;
 }
-
+*/
 static int afalg_destroy(ENGINE *e)
 {
     ERR_unload_AFALG_strings();
