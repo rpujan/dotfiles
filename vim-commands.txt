@@ -150,6 +150,7 @@ these commands to easily switch between buffers:
 :bp            # Go to previous file.
 :b number      # Go to n'th file (E.g :b 2)
 :bw            # Close current file.
+:buffers or :ls or :files # list of all opened buffers
 
 Jumping back and forth in Normal mode
 -------------------------------------
@@ -190,3 +191,12 @@ Copy Paste
 Copy: ya{([ or yi{([
 move: 3j
 paste: viw or viW
+
+Advanced Features:
+-----------------
+- Auto-complete
+- Buffers
+- Recording
+- : norm
+- : ! command
+- Open files / URLs with gf / gx

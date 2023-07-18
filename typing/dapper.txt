@@ -1,0 +1,231 @@
+dotnet add package Dapper
+Install-Package Dapper
+Install-Package Microsoft.Data.SqlClient
+
+Using Dapper to access SQL Server is relatively easy. You first create a connection and start Dapper methods available.
+
+// Connect to the database 
+using (var connection = new SqlConnection(connectionString)) 
+{
+	// Create a query that retrieves all books with an author name of "John Smith"
+	var sql = "SELECT * FROM Books WHERE Author = @authorName";
+
+	// Use the Query method to execute the query and return a list of objects
+	var books = connection.Query<Book>(sql, new { authorName = "John Smith"}).ToList();
+}
+
+Querying data using Dapper is quite simple. You just need to provide the dapper select query and parameters, and after that, Dapper will automatically map the resulting columns to their corresponding properties in your model type.
+
+// Connect to the database
+using (var connection = new SqlConnection(connectionString))
+{
+	// Create a query that retrieves all books with an author name of "John Smith"
+	var sql = "SELECT * FROM Books WHERE Author = @authorName";
+
+	// Use the Query method to execute the query and return a list of objects
+	var books = connection.Query<Book>(sql, new { authorName = "John Smith" }).ToList();
+}
+
+Querying Scalar Values With Dapper
+
+The ExecuteScalar method is often used to execute SQL queries that return a single row and a single column. That could include queries such as retrieving the total number of rows in a database table or the sum of values from multiple columns.
+
+To retrieve a scalar value using Dapper, you first need to construct a query that will be executed against the database. After creating the query, you use the ExecuteScalar method to execute it and get back a single value from the results.
+
+using (var connection = new SqlConnection(connectionString))
+{
+	var sql = "SELECT COUNT(*) FROM Products";
+	var count = connection.ExecuteScalar(sql);
+
+	Console.WriteLine($"Total products: {count}");
+}
+
+The ExecuteScalarAsync is an asynchronous version of ExecuteScalar that executes the query asynchronously. It returns the first column of the first row from the result set returned by the query. Any additional columns or rows are ignored.
+
+using (var connection = new SqlConnection(connectionString))
+{
+	var sql = "SELECT COUNT(*) FROM Products";
+	var count = await connection.ExecuteScalarAsync(sql);
+
+	Console.WriteLine($"Total products: {count}");
+}
+
+Querying Single Row With Dapper
+
+Dapper allows developers to easily select a single row of data from the database by using its QuerySingle method. This method takes the SQL query and any associated parameters as arguments and returns an instance of the specified type.
+
+The first example returns dynamic types:
+
+using (var connection = new SqlConnection(connectionString))
+{
+	var sql = "SELECT * FROM Products WHERE ProductID = 1";
+	var product = connection.QuerySingle(sql);
+
+	Console.WriteLine($"{product.ProductID} {product.ProductName}");
+}
+
+The next example works with a Product type, which has the following definition based on the table schema:
+
+public class Product
+{
+	public int ProductID { get; set; }
+	public string ProductName { get; set; }
+	public int? SupplierId { get; set; }
+	public int? CategoryId { get; set; }
+	public string QuantityPerUnit { get; set; }
+	public decimal UnitPrice { get; set; }
+	public short? UnitsInStock { get; set; }
+	public short? UnitsOnOrder { get; set; }
+	public short? ReorderLevel { get; set; }
+	public bool Discontinued { get; set; }
+	public DateTime? DiscontinuedDate { get; set; }
+	public Category Category { get; set; }
+	public Supplier Supplier { get; set; }
+	public ICollection<OrderDetail> OrderDetails { get; set; } = new HashSet<OrderDetail>();
+}
+The following example is identical to the first one except for the presence of the <Product> type parameter:
+
+using (var connection = new SqlConnection(connectionString))
+{
+	var sql = "SELECT * FROM Products WHERE ProductID = 1";
+	var product = connection.QuerySingle<Product>(sql);
+
+	Console.WriteLine($"{product.ProductID} {product.ProductName}");
+}
+
+Dapper QueryFirst allows you to collect the first result from a query. That is especially useful when you need only one row of data, such as when querying for an ID value or other single-row returns. QueryFirst can accept any type of SQL query and will return the result accordingly.
+
+string sql = "SELECT * FROM Customers WHERE id=2";
+using (var connection = new SqlConnection(connectionString))
+{
+	var customer = connection.QueryFirst<Customer>(sql);
+	Console.WriteLine(person.FirstName);
+	Console.WriteLine(person.LastName);
+}
+
+Executing Non-Query Commands With Dapper
+
+Dapper allows you to execute non-query commands that are not intended to return resultsets, such as INSERT, UPDATE, and DELETE statements. To do this, you use the Execute extension method of the IDbConnection interface, which Dapper implements.
+
+The Execute method takes a few different parameters;
+
+One is the command text (the SQL query) to execute.
+The other is a parameter object that can be an anonymous type or even a Dapper DynamicParameters object if you need to specify additional information about the parameters to use in the query.
+The Execute method returns an int, representing the number of rows affected by the successful completion of the command.
+
+Here is an example of how to use the Execute method.
+
+string sql = "INSERT INTO Customers (Name, Email) VALUES (@Name, @Email);" 
+object[] parameters = { new { Name = "John Doe", Email = "jdoe@example.com" } };
+
+using (var connection = new SqlConnection(connectionString))
+{
+	conn.Execute(sql, parameters); 
+}
+
+The INSERT statement is used to add records to a table. You can use the Dapper Execute method to execute an INSERT statement to add one or more record(s) to the database table.
+
+var sql = "INSERT INTO Categories (CategoryName) values ('New Category')";
+using (var connection = new SqlConnection(connectionString))
+{
+	var affectedRows =  connection.Execute(sql);
+
+	Console.WriteLine($"Affected Rows: {affectedRows}");
+}
+
+The UPDATE statement is used to update existing records in a table. You can use the Execute method of Dapper to perform an UPDATE statement by passing a string containing the SQL query and any needed parameters.
+
+var sql = @"UPDATE Products SET TotalPrice = Quantity * UnitPrice WHERE CategoryID = 2";
+using (var connection = new SqlConnection(connectionString))
+{
+	var affectedRows = connection.Execute(sql);
+	
+	Console.WriteLine($"Affected Rows: {affectedRows}");
+}
+
+Dapper provides an Execute method for deleting data from the database. When using the Execute method for deleting data, it is essential to note that it returns an integer indicating the number of rows affected by the query.
+
+The value returned by the Execute method can be used to determine if the delete operation was successful or not. It is also important to note that any errors thrown by the database must be handled in your code.
+
+var sql = "DELETE FROM Categories WHERE CategoryName = 'New Category'";
+using (var connection = new SqlConnection(connectionString))
+{
+	var affectedRows =  connection.Execute(sql);
+	
+	Console.WriteLine($"Affected Rows: {affectedRows}");
+}
+
+Executing Stored Procedures With Dapper
+
+using(var connection = new SqlConnection(connectionString))
+{
+	//Set up DynamicParameters object to pass parameters  
+	DynamicParameters parameters = new DynamicParameters();   
+	parameters.Add("id", 1);  
+	
+	//Execute stored procedure and map the returned result to a Customer object  
+	var customer = conn.QuerySingleOrDefault<Customer>("GetCustomerById", parameters, commandType: CommandType.StoredProcedure);
+}
+
+Dapper CommandType.Text 
+All DbCommand objects have a CommandType property. By default, this is set to Text. If you want to execute a stored procedure in a SQL statement (text), you use the Execute (or Exec) statement:
+
+var sql = "exec GetSalesByYear @BeginningDate, @EndingDate";
+var values = new { BeginningDate = "2017-01-01", EndingDate = "2017-12-31" };
+var results = connection.Query(sql, values).ToList();
+results.ForEach(r => Console.WriteLine($"{r.OrderID} {r.Subtotal}"));
+
+The next example is the equivalent to the above, but with the CommandType set to StoredProcedure:
+
+var procedure = "GetSalesByYear";
+var values = new { BeginningDate = "2017-01-01", EndingDate = "2017-12-31" };
+var results = connection.Query(procedure, values, commandType: CommandType.StoredProcedure).ToList();
+results.ForEach(r => Console.WriteLine($"{r.OrderID} {r.Subtotal}"));
+
+Dapper Dynamic Parameters
+
+Dapper also provides a DynamicParameters class, representing a "bag" of parameter values.
+
+Dynamic Parameters create a dynamic object that can be passed to the Query method instead of normal parameters. That is done using the DynamicParameters C# class, which has several methods for adding and setting parameters. Once you have filled in all your dynamic parameters, they can be passed to the query as an argument.
+
+Dapper will then take care of parsing and constructing the SQL query for you. That makes it easier and safer to work with dynamic parameters, as all of the parameter handlings is taken care of by Dapper.
+
+You can pass an object to its constructor. Suitable objects include a Dictionary<string, object>:
+
+var dictionary = new Dictionary<string, object>
+{
+	{ "@ProductId", 1 }
+};
+var parameters = new DynamicParameters(dictionary);
+var sql = "SELECT * FROM products WHERE ProductId = @ProductId";
+using (var connection = new SqlConnection(connectionString))
+{
+	var product = connection.QuerySingle<Product>(sql, parameters);
+}
+Or you can pass an anonymous type:
+
+var parameters = new DynamicParameters({ ProductId = 1 });
+var sql = "SELECT * FROM products WHERE ProductId = @ProductId";
+using (var connection = new SqlConnection(connectionString))
+{
+	var product = connection.QuerySingle<Product>(sql, parameters);
+}
+Or you can pass a stub representing the object that you are looking to return:
+
+var template = new Product { ProductId = 1 };
+var parameters = new DynamicParameters(template);
+var sql = "SELECT * FROM products WHERE ProductId = @ProductId";
+using (var connection = new SqlConnection(connectionString))
+{
+	var product = connection.QuerySingle<Product>(sql, parameters);
+}
+The DynamicParameters type provides an Add method, enabling you to pass explicit parameters, specifying the datatype, direction, and size:
+
+var parameters = new DynamicParameters();
+var customerId = "ALFKI";
+parameters.Add("@CustomerId", customerId, DbType.String, ParameterDirection.Input, customerId.Length);
+var sql = "SELECT * FROM customers WHERE CustomerId = @CustomerId";
+using (var connection = new SqlConnection(connectionString))
+{
+	var customer = connection.QuerySingle<Customer>(sql, parameters);
+}

@@ -138,6 +138,8 @@ alias review='cd c:/Work/Projects/AIProject/ReviewAssist'
 alias tmux='TERM=screen-256color-bce tmux'
 
 
+alias ai='cd c:/Work/Projects/AIProject'
+
 # Git alias
 alias gitlog='git log --pretty=tformat:"%C(yellow)%h %C(cyan)%ad %Cblue%an%C(auto)%d %Creset%s" --date=format:"%Y-%m-%d %H:%M" --graph'
 
@@ -159,8 +161,8 @@ __PS1_AFTER='\e[01;94;1m$ \e[m'
 # export PS1="${__PS1_BEFORE}${__PS1_LOCATION}${__PS1_GIT_BRANCH}${__PS1_AFTER}"
 
 # eval "$(oh-my-posh init bash)"
-# eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/json.omp.json)"
-eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/dracula.omp.json)"
+eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/json.omp.json)"
+# eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/dracula.omp.json)"
 
 c() {
 	gcc -O2 -Wall "$1".c -o "$1".exe && ./"$1".exe
