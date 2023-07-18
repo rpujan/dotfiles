@@ -952,18 +952,6 @@ static int afalg_finish(ENGINE *e)
 {
     return 1;
 }
-
-static int free_cbc(void)
-{
-    short unsigned int i;
-    int i;
-    for (i = 0; i < OSSL_NELEM(afalg_cipher_nids); i++) {
-        EVP_CIPHER_meth_free(cbc_handle[i]._hidden);
-        cbc_handle[i]._hidden = NULL;
-    }
-    return 1;
-}
-
 static int afalg_destroy(ENGINE *e)
 {
     ERR_unload_AFALG_strings();
