@@ -74,3 +74,9 @@ sudo apt install tmux
 
 
 Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+
+
+6L65_vE51bKJvu-nnmAXnq9pqG0wk3rYao46n-6kyyo
+
+
+https://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@github.com/irspl/ReviewAssist.git
