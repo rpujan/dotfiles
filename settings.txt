@@ -1,4 +1,6 @@
-
+amABX7XevdWlL
+WLa0jgfE0QDaj
+Vuu71QV8Gk
 sudo apt update
 
 Install vim
