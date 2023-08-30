@@ -1,0 +1,451 @@
+// DP
+
+// Fibonacci Series using Space Optimized Method
+#include <stdio.h>
+int fib(int n)
+{
+	int a = 0, b = 1, c, i;
+	if (n == 0)
+		return a;
+	for (i = 2; i <= n; i++) {
+		c = a + b;
+		a = b;
+		b = c;
+	}
+	return b;
+}
+ 
+int main()
+{
+	int n = 9;
+	printf("%d", fib(n));
+	getchar();
+	return 0;
+}
+
+// Fibonacci Series using Recursion
+#include <stdio.h>
+int fib(int n)
+{
+	if (n <= 1)
+		return n;
+	return fib(n - 1) + fib(n - 2);
+}
+ 
+int main()
+{
+	int n = 5;
+	printf("%dth Fibonacci Number: %d", n, fib(n));
+	return 0;
+}
+
+// Fibonacci Series using Dynamic Programming
+#include <stdio.h>
+ 
+int fib(int n)
+{
+	/* Declare an array to store Fibonacci numbers. */
+	int f[n + 2]; // 1 extra to handle case, n = 0
+	int i;
+ 
+	/* 0th and 1st number of the series are 0 and 1*/
+	f[0] = 0;
+	f[1] = 1;
+ 
+	for (i = 2; i <= n; i++) {
+		/* Add the previous 2 numbers in the series
+		   and store it */
+		f[i] = f[i - 1] + f[i - 2];
+	}
+ 
+	return f[n];
+}
+ 
+int main()
+{
+	int n = 9;
+	printf("%d", fib(n));
+	getchar();
+	return 0;
+}
+
+#include <iostream>
+using namespace std;
+ 
+// A recursive function to find nth catalan number
+unsigned long int catalan(unsigned int n)
+{
+	// Base case
+	if (n <= 1)
+		return 1;
+ 
+	// catalan(n) is sum of
+	// catalan(i)*catalan(n-i-1)
+	unsigned long int res = 0;
+	for (int i = 0; i < n; i++)
+		res += catalan(i) * catalan(n - i - 1);
+ 
+	return res;
+}
+ 
+// Driver code
+int main()
+{
+	for (int i = 0; i < 10; i++)
+		cout << catalan(i) << " ";
+	return 0;
+}
+
+#include <iostream>
+using namespace std;
+ 
+// A dynamic programming based function to find nth
+// Catalan number
+unsigned long int catalanDP(unsigned int n)
+{
+	// Table to store results of subproblems
+	unsigned long int catalan[n + 1];
+ 
+	// Initialize first two values in table
+	catalan[0] = catalan[1] = 1;
+ 
+	// Fill entries in catalan[] using recursive formula
+	for (int i = 2; i <= n; i++) {
+		catalan[i] = 0;
+		for (int j = 0; j < i; j++)
+			catalan[i] += catalan[j] * catalan[i - j - 1];
+	}
+ 
+	// Return last entry
+	return catalan[n];
+}
+ 
+// Driver code
+int main()
+{
+	for (int i = 0; i < 10; i++)
+		cout << catalanDP(i) << " ";
+	return 0;
+}
+
+// A recursive solution for subset sum problem
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// Returns true if there is a subset
+// of set[] with sum equal to given sum
+bool isSubsetSum(int set[], int n, int sum)
+{
+	// Base Cases
+	if (sum == 0)
+		return true;
+	if (n == 0)
+		return false;
+
+	// If last element is greater than sum,
+	// then ignore it
+	if (set[n - 1] > sum)
+		return isSubsetSum(set, n - 1, sum);
+
+	// Else, check if sum can be obtained by any
+	// of the following:
+	// (a) including the last element
+	// (b) excluding the last element
+	return isSubsetSum(set, n - 1, sum)
+		|| isSubsetSum(set, n - 1, sum - set[n - 1]);
+}
+
+// Driver code
+int main()
+{
+	int set[] = { 3, 34, 4, 12, 5, 2 };
+	int sum = 9;
+	int n = sizeof(set) / sizeof(set[0]);
+	if (isSubsetSum(set, n, sum) == true)
+		cout << "Found a subset with given sum";
+	else
+		cout << "No subset with given sum";
+	return 0;
+}
+
+// CPP program for the memoization approach
+#include <bits/stdc++.h>
+using namespace std;
+
+// Taking the matrix as globally
+int tab[2000][2000];
+
+// Check if possible subset with
+// given sum is possible or not
+int subsetSum(int a[], int n, int sum)
+{
+	// If the sum is zero it means
+	// we got our expected sum
+	if (sum == 0)
+		return 1;
+		
+	if (n <= 0)
+		return 0;
+
+	// If the value is not -1 it means it
+	// already call the function
+	// with the same value.
+	// it will save our from the repetition.
+	if (tab[n - 1][sum] != -1)
+		return tab[n - 1][sum];
+
+	// If the value of a[n-1] is
+	// greater than the sum.
+	// we call for the next value
+	if (a[n - 1] > sum)
+		return tab[n - 1][sum] = subsetSum(a, n - 1, sum);
+	else
+	{	
+		// Here we do two calls because we
+		// don't know which value is
+		// full-fill our criteria
+		// that's why we doing two calls
+		return tab[n - 1][sum] = subsetSum(a, n - 1, sum) ||
+					subsetSum(a, n - 1, sum - a[n - 1]);
+	}
+}
+
+// Driver Code
+int main()
+{
+	// Storing the value -1 to the matrix
+	memset(tab, -1, sizeof(tab));
+	int n = 5;
+	int a[] = {1, 5, 3, 7, 4};
+	int sum = 12;
+
+	if (subsetSum(a, n, sum))
+	{
+		cout << "YES" << endl;
+	}
+	else
+		cout << "NO" << endl;
+}
+
+// A Dynamic Programming solution
+// for subset sum problem
+#include <bits/stdc++.h>
+using namespace std;
+
+// Returns true if there is a subset of set[]
+// with sum equal to given sum
+bool isSubsetSum(int set[], int n, int sum)
+{
+	// The value of subset[i][j] will be true if
+	// there is a subset of set[0..j-1] with sum
+	// equal to i
+	bool subset[n + 1][sum + 1];
+
+	// If sum is 0, then answer is true
+	for (int i = 0; i <= n; i++)
+		subset[i][0] = true;
+
+	// If sum is not 0 and set is empty,
+	// then answer is false
+	for (int i = 1; i <= sum; i++)
+		subset[0][i] = false;
+
+	// Fill the subset table in bottom up manner
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= sum; j++) {
+			if (j < set[i - 1])
+				subset[i][j] = subset[i - 1][j];
+			if (j >= set[i - 1])
+				subset[i][j]
+					= subset[i - 1][j]
+					|| subset[i - 1][j - set[i - 1]];
+		}
+	}
+
+	return subset[n][sum];
+}
+
+// Driver code
+int main()
+{
+	int set[] = { 3, 34, 4, 12, 5, 2 };
+	int sum = 9;
+	int n = sizeof(set) / sizeof(set[0]);
+	if (isSubsetSum(set, n, sum) == true)
+		cout << "Found a subset with given sum";
+	else
+		cout << "No subset with given sum";
+	return 0;
+}
+
+// Recursive C++ program for
+// coin change problem.
+#include <bits/stdc++.h>
+using namespace std;
+
+// Returns the count of ways we can
+// sum coins[0...n-1] coins to get sum "sum"
+int count(int coins[], int n, int sum)
+{
+
+	// If sum is 0 then there is 1 solution
+	// (do not include any coin)
+	if (sum == 0)
+		return 1;
+
+	// If sum is less than 0 then no
+	// solution exists
+	if (sum < 0)
+		return 0;
+
+	// If there are no coins and sum
+	// is greater than 0, then no
+	// solution exist
+	if (n <= 0)
+		return 0;
+
+	// count is sum of solutions (i)
+	// including coins[n-1] (ii) excluding coins[n-1]
+	return count(coins, n, sum - coins[n - 1])
+		+ count(coins, n - 1, sum);
+}
+
+// Driver code
+int main()
+{
+	int i, j;
+	int coins[] = { 1, 2, 3 };
+	int n = sizeof(coins) / sizeof(coins[0]);
+	int sum = 5;
+
+	cout << " " << count(coins, n, sum);
+
+	return 0;
+}
+
+// A recursive solution for Rod cutting problem
+#include <bits/stdc++.h>
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+// A utility function to get the maximum of two integers
+int max(int a, int b) { return (a > b) ? a : b; }
+
+/* Returns the best obtainable price for a rod of length n
+and price[] as prices of different pieces */
+int cutRod(int price[], int index, int n)
+{
+	// base case
+	if (index == 0) {
+		return n * price[0];
+	}
+	//At any index we have 2 options either
+	//cut the rod of this length or not cut
+	//it
+	int notCut = cutRod(price,index - 1,n);
+	int cut = INT_MIN;
+	int rod_length = index + 1;
+
+	if (rod_length <= n)
+		cut = price[index]
+			+ cutRod(price,index,n - rod_length);
+
+	return max(notCut, cut);
+}
+
+/* Driver program to test above functions */
+int main()
+{
+	int arr[] = { 1, 5, 8, 9, 10, 17, 17, 20 };
+	int size = sizeof(arr) / sizeof(arr[0]);
+	cout << "Maximum Obtainable Value is "
+		<< cutRod(arr, size - 1, size);
+	getchar();
+	return 0;
+}
+
+// A memoization solution for Rod cutting problem
+#include <bits/stdc++.h>
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+// A utility function to get the maximum of two integers
+int max(int a, int b) { return (a > b) ? a : b; }
+
+/* Returns the best obtainable price for a rod of length n
+and price[] as prices of different pieces */
+int cutRod(int price[], int index, int n,
+		vector<vector<int> >& dp)
+{
+	// base case
+	if (index == 0) {
+		return n * price[0];
+	}
+	if (dp[index][n] != -1)
+		return dp[index][n];
+	// At any index we have 2 options either
+	// cut the rod of this length or not cut
+	// it
+	int notCut = cutRod(price, index - 1, n,dp);
+	int cut = INT_MIN;
+	int rod_length = index + 1;
+
+	if (rod_length <= n)
+		cut = price[index]
+			+ cutRod(price, index, n - rod_length,dp);
+
+	return dp[index][n]=max(notCut, cut);
+	
+}
+/* Driver program to test above functions */
+int main()
+{
+	int arr[] = { 1, 5, 8, 9, 10, 17, 17, 20 };
+	int size = sizeof(arr) / sizeof(arr[0]);
+	vector<vector<int> > dp(size,vector<int>(size + 1, -1));
+	cout << "Maximum Obtainable Value is "
+		<< cutRod(arr, size - 1, size, dp);
+	getchar();
+	return 0;
+}
+
+// A Dynamic Programming solution for Rod cutting problem
+#include<stdio.h>
+#include<limits.h>
+
+// A utility function to get the maximum of two integers
+int max(int a, int b) { return (a > b)? a : b;}
+
+/* Returns the best obtainable price for a rod of length n and
+price[] as prices of different pieces */
+int cutRod(int price[], int n)
+{
+int val[n+1];
+val[0] = 0;
+int i, j;
+
+// Build the table val[] in bottom up manner and return the last entry
+// from the table
+for (i = 1; i<=n; i++)
+{
+	int max_val = INT_MIN;
+	for (j = 0; j < i; j++)
+		max_val = max(max_val, price[j] + val[i-j-1]);
+	val[i] = max_val;
+}
+
+return val[n];
+}
+
+/* Driver program to test above functions */
+int main()
+{
+	int arr[] = {1, 5, 8, 9, 10, 17, 17, 20};
+	int size = sizeof(arr)/sizeof(arr[0]);
+	printf("Maximum Obtainable Value is %d", cutRod(arr, size));
+	getchar();
+	return 0;
+}
