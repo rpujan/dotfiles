@@ -1,0 +1,356 @@
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+
+export default function BasicTextFields() {
+	return (
+		<Box
+			component="form"
+			sx={{
+				'& > :not(style)': { m: 1, width: '25ch' },
+			}}
+			noValidate
+			autoComplete="off"
+		>
+			<TextField id="outlined-basic" label="Outlined" variant="outlined" />
+			<TextField id="filled-basic" label="Filled" variant="filled" />
+			<TextField id="standard-basic" label="Standard" variant="standard" />
+		</Box>
+	);
+}
+
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+
+export default function ValidationTextFields() {
+	return (
+		<Box
+			component="form"
+			sx={{
+				'& .MuiTextField-root': { m: 1, width: '25ch' },
+			}}
+			noValidate
+			autoComplete="off"
+		>
+			<div>
+				<TextField
+					error
+					id="outlined-error"
+					label="Error"
+					defaultValue="Hello World"
+				/>
+				<TextField
+					error
+					id="outlined-error-helper-text"
+					label="Error"
+					defaultValue="Hello World"
+					helperText="Incorrect entry."
+				/>
+			</div>
+			<div>
+				<TextField
+					error
+					id="filled-error"
+					label="Error"
+					defaultValue="Hello World"
+					variant="filled"
+				/>
+				<TextField
+					error
+					id="filled-error-helper-text"
+					label="Error"
+					defaultValue="Hello World"
+					helperText="Incorrect entry."
+					variant="filled"
+				/>
+			</div>
+			<div>
+				<TextField
+					error
+					id="standard-error"
+					label="Error"
+					defaultValue="Hello World"
+					variant="standard"
+				/>
+				<TextField
+					error
+					id="standard-error-helper-text"
+					label="Error"
+					defaultValue="Hello World"
+					helperText="Incorrect entry."
+					variant="standard"
+				/>
+			</div>
+		</Box>
+	);
+}
+
+import * as React from 'react';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+
+export default function BasicButtons() {
+	return (
+		<Stack spacing={2} direction="row">
+			<Button variant="text">Text</Button>
+			<Button variant="contained">Contained</Button>
+			<Button variant="outlined">Outlined</Button>
+		</Stack>
+	);
+}
+
+export default function TextButtons() {
+	return (
+		<Stack direction="row" spacing={2}>
+			<Button>Primary</Button>
+			<Button disabled>Disabled</Button>
+			<Button href="#text-buttons">Link</Button>
+		</Stack>
+	);
+}
+
+export default function ContainedButtons() {
+	return (
+		<Stack direction="row" spacing={2}>
+			<Button variant="contained">Contained</Button>
+			<Button variant="contained" disabled>
+				Disabled
+			</Button>
+			<Button variant="contained" href="#contained-buttons">
+				Link
+			</Button>
+		</Stack>
+	);
+}
+
+export default function DisableElevation() {
+	return (
+		<Button variant="contained" disableElevation>
+			Disable elevation
+		</Button>
+	);
+}
+
+export default function OutlinedButtons() {
+	return (
+		<Stack direction="row" spacing={2}>
+			<Button variant="outlined">Primary</Button>
+			<Button variant="outlined" disabled>
+				Disabled
+			</Button>
+			<Button variant="outlined" href="#outlined-buttons">
+				Link
+			</Button>
+		</Stack>
+	);
+}
+
+import DeleteIcon from '@mui/icons-material/Delete';
+import SendIcon from '@mui/icons-material/Send';
+
+export default function IconLabelButtons() {
+	return (
+		<Stack direction="row" spacing={2}>
+			<Button variant="outlined" startIcon={<DeleteIcon />}>
+				Delete
+			</Button>
+			<Button variant="contained" endIcon={<SendIcon />}>
+				Send
+			</Button>
+		</Stack>
+	);
+}
+
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+
+export default function BasicButtonGroup() {
+	return (
+		<ButtonGroup variant="contained" aria-label="outlined primary button group">
+			<Button>One</Button>
+			<Button>Two</Button>
+			<Button>Three</Button>
+		</ButtonGroup>
+	);
+}
+
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ClickAwayListener from '@mui/material/ClickAwayListener';
+import Grow from '@mui/material/Grow';
+import Paper from '@mui/material/Paper';
+import Popper from '@mui/material/Popper';
+import MenuItem from '@mui/material/MenuItem';
+import MenuList from '@mui/material/MenuList';
+
+const options = ['Create a merge commit', 'Squash and merge', 'Rebase and merge'];
+
+export default function SplitButton() {
+	const [open, setOpen] = React.useState(false);
+	const anchorRef = React.useRef(null);
+	const [selectedIndex, setSelectedIndex] = React.useState(1);
+
+	const handleClick = () => {
+		console.info(`You clicked ${options[selectedIndex]}`);
+	};
+
+	const handleMenuItemClick = (event, index) => {
+		setSelectedIndex(index);
+		setOpen(false);
+	};
+
+	const handleToggle = () => {
+		setOpen((prevOpen) => !prevOpen);
+	};
+
+	const handleClose = (event) => {
+		if (anchorRef.current && anchorRef.current.contains(event.target)) {
+			return;
+		}
+
+		setOpen(false);
+	};
+
+	return (
+		<React.Fragment>
+			<ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
+				<Button onClick={handleClick}>{options[selectedIndex]}</Button>
+				<Button
+					size="small"
+					aria-controls={open ? 'split-button-menu' : undefined}
+					aria-expanded={open ? 'true' : undefined}
+					aria-label="select merge strategy"
+					aria-haspopup="menu"
+					onClick={handleToggle}
+				>
+					<ArrowDropDownIcon />
+				</Button>
+			</ButtonGroup>
+			<Popper
+				sx={{
+					zIndex: 1,
+				}}
+				open={open}
+				anchorEl={anchorRef.current}
+				role={undefined}
+				transition
+				disablePortal
+			>
+				{({ TransitionProps, placement }) => (
+					<Grow
+						{...TransitionProps}
+						style={{
+							transformOrigin:
+								placement === 'bottom' ? 'center top' : 'center bottom',
+						}}
+					>
+						<Paper>
+							<ClickAwayListener onClickAway={handleClose}>
+								<MenuList id="split-button-menu" autoFocusItem>
+									{options.map((option, index) => (
+										<MenuItem
+											key={option}
+											disabled={index === 2}
+											selected={index === selectedIndex}
+											onClick={(event) => handleMenuItemClick(event, index)}
+										>
+											{option}
+										</MenuItem>
+									))}
+								</MenuList>
+							</ClickAwayListener>
+						</Paper>
+					</Grow>
+				)}
+			</Popper>
+		</React.Fragment>
+	);
+}
+
+import * as React from 'react';
+import Checkbox from '@mui/material/Checkbox';
+
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
+export default function Checkboxes() {
+	return (
+		<div>
+			<Checkbox {...label} defaultChecked />
+			<Checkbox {...label} />
+			<Checkbox {...label} disabled />
+			<Checkbox {...label} disabled checked />
+		</div>
+	);
+}
+
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+
+export default function CheckboxLabels() {
+	return (
+		<FormGroup>
+			<FormControlLabel control={<Checkbox defaultChecked />} label="Label" />
+			<FormControlLabel required control={<Checkbox />} label="Required" />
+			<FormControlLabel disabled control={<Checkbox />} label="Disabled" />
+		</FormGroup>
+	);
+}
+
+import * as React from 'react';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+
+export default function RadioButtonsGroup() {
+	return (
+		<FormControl>
+			<FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
+			<RadioGroup
+				aria-labelledby="demo-radio-buttons-group-label"
+				defaultValue="female"
+				name="radio-buttons-group"
+			>
+				<FormControlLabel value="female" control={<Radio />} label="Female" />
+				<FormControlLabel value="male" control={<Radio />} label="Male" />
+				<FormControlLabel value="other" control={<Radio />} label="Other" />
+			</RadioGroup>
+		</FormControl>
+	);
+}
+
+import * as React from 'react';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+
+export default function ControlledRadioButtonsGroup() {
+	const [value, setValue] = React.useState('female');
+
+	const handleChange = (event) => {
+		setValue(event.target.value);
+	};
+
+	return (
+		<FormControl>
+			<FormLabel id="demo-controlled-radio-buttons-group">Gender</FormLabel>
+			<RadioGroup
+				aria-labelledby="demo-controlled-radio-buttons-group"
+				name="controlled-radio-buttons-group"
+				value={value}
+				onChange={handleChange}
+			>
+				<FormControlLabel value="female" control={<Radio />} label="Female" />
+				<FormControlLabel value="male" control={<Radio />} label="Male" />
+			</RadioGroup>
+		</FormControl>
+	);
+}
+
