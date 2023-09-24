@@ -1,0 +1,11 @@
+SFB – Same Finger Bigram: two keys pressed with the same finger sequentially
+
+DFB – Disjoint (Same) Finger Bigram: two keys pressed with the same finger with 1 or more other keys in between
+
+LSB – Lateral Stretch Bigram: two keys pressed sequentially with different fingers but where one or both has to stretch off its home column position
+
+
+Top 10 QWERTY SFBs:
+
+ed de lo ce un ec tr rt ol my
+n' kn sp rl nk gs ue yi ps ws
