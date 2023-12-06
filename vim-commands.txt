@@ -200,3 +200,10 @@ Advanced Features:
 - : norm
 - : ! command
 - Open files / URLs with gf / gx
+
+VS Code (with Vim enabled):
+---------------------------
+Ctrl + ` : Focus terminal windows
+Ctrl + 1 : Focus code windows
+Ctrl + Shift + e : Move between file explorer windows and editor windows
+
