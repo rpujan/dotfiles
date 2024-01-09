@@ -206,4 +206,5 @@ VS Code (with Vim enabled):
 Ctrl + ` : Focus terminal windows
 Ctrl + 1 : Focus code windows
 Ctrl + Shift + e : Move between file explorer windows and editor windows
-
+Ctrl + n : Create new file in file explorer windows.
+Ctrl + Shift + n : Create a new folder in file explorer windows.
