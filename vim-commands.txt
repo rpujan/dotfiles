@@ -230,3 +230,14 @@ Ctrl + 1 : Focus code windows
 Ctrl + Shift + e : Move between file explorer windows and editor windows
 Ctrl + n : Create new file in file explorer windows.
 Ctrl + Shift + n : Create a new folder in file explorer windows.
+gt    : Next tab
+gT    : Previous tab
+nnngt : Numbered tab
+
+Text Files
+----------
+:set wrap           : Justify text
+:set wrap linebreak : Left align text
+), (                : Jump forward/backward one sentence.
+}, {                : Jump forward/backward one paragraph.
+

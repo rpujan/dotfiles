@@ -1,0 +1,35 @@
+
+Use the natural Vim navigation keys hjkl to navigate the files.
+Press o to open the file in a new buffer or open/close directory.
+Press t to open the file in a new tab.
+Press i to open the file in a new horizontal split.
+Press s to open the file in a new vertical split.
+Press p to go to parent directory.
+Press r to refresh the current directory.
+Press m to launch NERDTree menu inside Vim.
+
+Navigation
+Ctrl-ww				Toggle between windows
+gt					Next tab
+gT					Previous tab
+Ctrl-w J			split vertically
+Ctrl-w L			split horizo­ntally
+Ctrl-w Ctrl-r		swap windows
+Ctrl-w t Ctrl-w H	Horizontal -> Vertical
+Ctrl-w t Ctrl-w K	Vertical -> Horizontal
+
+File
+T					Open in new tab (backg­round)
+t					Open in new tab (activate)
+za					toggle collapse folders
+zc					close folder
+zo					open folder
+zR					open all folders
+zM					close all folders
+i					open file in vertical split
+s					open file in horizontal split
+
+File Explorer
+o					Toggle folder open/close
+O					Recurs­ively open all folders
+
