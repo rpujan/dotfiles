@@ -83,6 +83,7 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'ap/vim-css-color'                 " CSS Color Preview
 Plug 'preservim/tagbar'                 " Tagbar for code navigation
 Plug 'tpope/vim-commentary'             " For Commenting gcc & gc
+Plug 'jlcrochet/vim-razor'              " vim highlight for razor file
 
 Plug 'preservim/nerdtree'
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
