@@ -134,7 +134,7 @@ alias abi='cd c:/Work/Projects/Alpaca/ABI'
 alias sch='cd c:/Work/Projects/Alpaca/Scheduling'
 alias dc='cd c:/Work/Projects/Alpaca/DataCenter'
 alias misc='cd c:/Work/Projects/Misc'
-alias review='cd c:/Work/Projects/AIProject/ReviewAssist'
+alias review='cd c:/Work/Projects/RightResponseAI/App'
 alias tmux='TERM=screen-256color-bce tmux'
 
 
@@ -161,8 +161,13 @@ __PS1_AFTER='\e[01;94;1m$ \e[m'
 # export PS1="${__PS1_BEFORE}${__PS1_LOCATION}${__PS1_GIT_BRANCH}${__PS1_AFTER}"
 
 # eval "$(oh-my-posh init bash)"
-eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/json.omp.json)"
+# eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/tokyonight_storm.omp.json)"
+# eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/json.omp.json)"
 # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/dracula.omp.json)"
+# eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/clean-detailed.omp.json)"
+# eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/easy-term.omp.json)"
+# eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/di4am0nd.omp.json)"
+eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/material.omp.json)"
 
 c() {
 	gcc -O2 -Wall "$1".c -o "$1".exe && ./"$1".exe
