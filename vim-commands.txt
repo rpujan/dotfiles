@@ -241,3 +241,21 @@ Text Files
 ), (                : Jump forward/backward one sentence.
 }, {                : Jump forward/backward one paragraph.
 
+format file (indentation)
+-------------------------
+The master of all commands:
+gg=G
+
+To indent the all the lines below the current line:
+=G
+
+To indent the current line:
+==
+
+To indent 'n' lines below the current line:
+n==
+for example, to indent 4 lines below the current line:
+4==
+
+To indent a block of code, go to one of the brackes and  use command:
+=%
