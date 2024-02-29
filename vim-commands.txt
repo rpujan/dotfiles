@@ -241,3 +241,52 @@ Text Files
 ), (                : Jump forward/backward one sentence.
 }, {                : Jump forward/backward one paragraph.
 
+format file (indentation)
+-------------------------
+The master of all commands:
+gg=G
+
+To indent the all the lines below the current line:
+=G
+
+To indent the current line:
+==
+
+To indent 'n' lines below the current line:
+n==
+for example, to indent 4 lines below the current line:
+4==
+
+To indent a block of code, go to one of the brackes and  use command:
+=%
+
+Different ways to get into insert mode
+--------------------------------------
+There are different ways to get into insert mode besides i. Here are some of them:
+
+i      " insert text before cursor
+I      " insert text before the first non-blank character of the line.
+a      " append text after cursor
+A      " append text at the end of line
+o      " starts a new line below cursor and insert text
+O      " starts a new line above cursor and insert text
+gi     " insert text in same position where last insert mode was stopped in current buffer
+gI     " insert text at the start of line (column 1)
+
+Repeating Insert Mode
+---------------------
+You can give a count before you enter insert mode. For example:
+10i
+
+Then if you type "hello world!" and exit insert mode, it will repeat the text "hello world!" 10 times. 
+This works with any methods you use to enter insert mode (10I, 11a, 12o)
+
+Deleting chunks in insert mode
+------------------------------
+There are different ways to delete while in insert mode besides <backspace>:
+Ctrl-h      " delete one character
+Ctrl-w      " delete one word
+Ctrl-u      " delete entire line
+
+
+
