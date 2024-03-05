@@ -1,0 +1,4 @@
+https://mockbin.io/
+https://mocki.io/fake-json-api
+https://mocki.io/v1/972b5951-e4b6-464f-9efa-e91dabfe0bfd
+https://fakestoreapi.com/docs
