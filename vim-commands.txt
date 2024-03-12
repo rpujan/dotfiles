@@ -288,5 +288,83 @@ Ctrl-h      " delete one character
 Ctrl-w      " delete one word
 Ctrl-u      " delete entire line
 
+i: insert before the cursor
+a: append after the cursor
+I: insert at the beginning of the line
+A: append at the end of the line
+o: open a new line below the current one
+O: open a new line above the current one
+r: replace the one character under your cursor
+R: replace the character under your cursor, but just keep typing afterwards
+cm: change whatever you define as a movement, e.g. a word, or a sentence, or a paragraph.
+C: change the current line from where you’re at
+ct?: change change up to the question mark
+s: substitute from where you are to the next command (noun)
+S: substitute the entire current line
+
+
+Marking Position
+----------------
+You can use marks to save your current position and return to this position later. 
+It's like a bookmark for text editing. You can set a mark with mx, where x can be any 
+alphabetical letter a-zA-Z. There are two ways to return to mark: exact (line and column) 
+with  `x and linewise ('x).
+
+ma    Mark position with mark "a"
+`a    Jump to line and column "a"
+'a    Jump to line "a"
+
+There is a difference between marking with lowercase letters (a-z) and uppercase letters (A-Z). 
+Lowercase alphabets are local marks and uppercase alphabets are global marks (sometimes known as file marks).
+
+Let's talk about local marks. Each buffer can have its own set of local marks. 
+If I have two files opened, I can set a mark "a" (ma) in the first file and another mark "a" (ma) 
+in the second file.
+
+Unlike local marks where you can have a set of marks in each buffer, you only get one set of 
+global marks. If you set mA inside myFile.txt, the next time you run mA in a different file, 
+it will overwrite the first "A" mark. One advantage of global marks is you can jump to any global 
+mark even if you are inside a completely different project. Global marks can travel across files.
+
+To view all marks, use :marks. You may notice from the marks list there are more marks other 
+than a-zA-Z. Some of them are:
+
+''    Jump back to the last line in current buffer before jump
+``    Jump back to the last position in current buffer before jump
+`[    Jump to beginning of previously changed / yanked text
+`]    Jump to the ending of previously changed / yanked text
+`<    Jump to the beginning of last visual selection
+`>    Jump to the ending of last visual selection
+`0    Jump back to the last edited file when exiting vim
+
+Vim As a Merge Tool
+-------------------
+First, change the default merge tool to use vimdiff by running:
+
+git config merge.tool vimdiff
+git config merge.conflictstyle diff3
+git config mergetool.prompt false
+
+Resolve the conflict using our newly-configured mergetool. Run:
+
+git mergetool
+
+Vim displays four windows. Pay attention to the top three:
+
+LOCA   This is the change in "local", what you are merging into.
+BASE   This is the common ancestor between LOCAL and REMOTE to compare how they diverge.
+REMOTE This is what is being merged into.
+
+At the bottom (the fourth window):
+
+The fourth window contains the merge conflict texts. With this setup, it is easier to 
+see what change each environment has. You can see the content from LOCAL, BASE, and REMOTE 
+at the same time.
+
+Your cursor should be on the fourth windows, on the highlighted area. 
+To get the change from LOCAL (grapes), run :diffget LOCAL. 
+To get the change from BASE (oranges), run :diffget BASE and 
+To get the change from REMOTE (apples), run :diffget REMOTE.
+
 
 
