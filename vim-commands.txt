@@ -21,9 +21,9 @@ ddp            Move a line down
 :m +1          moves down 1 line
 :m -2          move up 1 lines
 
-^E ^Y          scroll line up, down
+^E, ^Y         scroll line up, down
 ^D, ^U         scroll half a page down, up
-^F ^B          scroll page up, down
+^F, ^B         scroll page up, down
 
 Jumping within a line
 ---------------------
@@ -362,9 +362,12 @@ see what change each environment has. You can see the content from LOCAL, BASE, 
 at the same time.
 
 Your cursor should be on the fourth windows, on the highlighted area. 
-To get the change from LOCAL (grapes), run :diffget LOCAL. 
-To get the change from BASE (oranges), run :diffget BASE and 
-To get the change from REMOTE (apples), run :diffget REMOTE.
+To get the change from LOCAL run :diffget LOCAL. 
+To get the change from BASE run :diffget BASE and 
+To get the change from REMOTE run :diffget REMOTE.
 
-
-
+Insert Mode
+-----------
+<C-h> Delete back one character (backspace)
+<C-w> Delete back one word
+<C-u> Delete back to start of line
