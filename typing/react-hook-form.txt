@@ -1,0 +1,210 @@
+1. quick start
+
+import { useForm } from "react-hook-form"
+
+export default function App() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
+
+  const onSubmit = (data) => console.log(data)
+
+  console.log(watch("example"))
+
+  return (
+    /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
+    
+    <form onSubmit={handleSubmit(onSubmit)}>
+      {/* register your input into the hook by invoking the "register" function */}
+      <input defaultValue="test" {...register("example")} />
+
+      {/* include validation with required or other standard HTML validation rules */}
+      <input {...register("exampleRequired", { required: true })} />
+      
+      {/* errors will return when field validation fails  */}
+      {errors.exampleRequired && <span>This field is required</span>}
+
+      <input type="submit" />
+    </form>
+  )
+}
+
+2. register fields
+
+import { useForm } from "react-hook-form"
+
+export default function App() {
+  const { register, handleSubmit } = useForm()
+  const onSubmit = (data) => console.log(data)
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <input {...register("firstName")} />
+      <select {...register("gender")}>
+        <option value="female">female</option>
+        <option value="male">male</option>
+        <option value="other">other</option>
+      </select>
+      <input type="submit" />
+    </form>
+  )
+}
+
+3. apply validation
+
+import { useForm } from "react-hook-form"
+
+export default function App() {
+  const { register, handleSubmit } = useForm()
+  const onSubmit = (data) => console.log(data)
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <input {...register("firstName", { required: true, maxLength: 20 })} />
+      <input {...register("lastName", { pattern: /^[A-Za-z]+$/i })} />
+      <input type="number" {...register("age", { min: 18, max: 99 })} />
+      <input type="submit" />
+    </form>
+  )
+}
+
+4. integrating an existing form
+
+import { useForm } from "react-hook-form"
+
+// The following component is an example of your existing Input Component
+const Input = ({ label, register, required }) => (
+  <>
+    <label>{label}</label>
+    <input {...register(label, { required })} />
+  </>
+)
+
+// you can use React.forwardRef to pass the ref too
+const Select = React.forwardRef(({ onChange, onBlur, name, label }, ref) => (
+  <>
+    <label>{label}</label>
+    <select name={name} ref={ref} onChange={onChange} onBlur={onBlur}>
+      <option value="20">20</option>
+      <option value="30">30</option>
+    </select>
+  </>
+))
+
+const App = () => {
+  const { register, handleSubmit } = useForm()
+
+  const onSubmit = (data) => {
+    alert(JSON.stringify(data))
+  }
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <Input label="First Name" register={register} required />
+      <Select label="Age" {...register("Age")} />
+      <input type="submit" />
+    </form>
+  )
+}
+
+5. integrating with UI libraries
+
+import Select from "react-select"
+import { useForm, Controller } from "react-hook-form"
+import { Input } from "@material-ui/core"
+
+const App = () => {
+  const { control, handleSubmit } = useForm({
+    defaultValues: {
+      firstName: "",
+      select: {},
+    },
+  })
+  const onSubmit = (data) => console.log(data)
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <Controller
+        name="firstName"
+        control={control}
+        render={({ field }) => <Input {...field} />}
+      />
+      <Controller
+        name="select"
+        control={control}
+        render={({ field }) => (
+          <Select
+            {...field}
+            options={[
+              { value: "chocolate", label: "Chocolate" },
+              { value: "strawberry", label: "Strawberry" },
+              { value: "vanilla", label: "Vanilla" },
+            ]}
+          />
+        )}
+      />
+      <input type="submit" />
+    </form>
+  )
+}
+
+6. integrating controlled input
+
+import { TextField } from "@material-ui/core"
+import { useController, useForm } from "react-hook-form"
+
+function Input({ control, name }) {
+  const {
+    field,
+    fieldState: { invalid, isTouched, isDirty },
+    formState: { touchedFields, dirtyFields },
+  } = useController({
+    name,
+    control,
+    rules: { required: true },
+  })
+
+  return (
+    <TextField
+      onChange={field.onChange} // send value to hook form
+      onBlur={field.onBlur} // notify when input is touched/blur
+      value={field.value} // input value
+      name={field.name} // send down the input name
+      inputRef={field.ref} // send input ref, so we can focus on input when error appear
+    />
+  )
+}
+
+7. integrating with global state
+
+import { useForm } from "react-hook-form"
+import { connect } from "react-redux"
+import updateAction from "./actions"
+
+export default function App(props) {
+  const { register, handleSubmit, setValue } = useForm({
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+    },
+  })
+  // Submit your data into Redux store
+  const onSubmit = (data) => props.updateAction(data)
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <input {...register("firstName")} />
+      <input {...register("lastName")} />
+      <input type="submit" />
+    </form>
+  )
+}
+
+// Connect your component with redux
+connect(
+  ({ firstName, lastName }) => ({ firstName, lastName }), updateAction
+)(YourForm)
+
