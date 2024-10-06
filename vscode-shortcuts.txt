@@ -1,0 +1,8 @@
+Ctrl + b  : Show/hide sidebar
+Ctrl + ~  : Show/hide terminal bar
+Ctrl + p  : Quick Open, Goto file ..
+Alt  + up/down arrow : Move line up/down
+Shift + Alt + up/down arrow : Copy line up/down
+Ctrl + Enter : Insert line below
+Ctrl + Shift + Enter : Inter line above
+Ctrl + ]/[ : Intent / outdent line
