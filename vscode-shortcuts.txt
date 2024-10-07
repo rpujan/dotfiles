@@ -6,3 +6,14 @@ Shift + Alt + up/down arrow : Copy line up/down
 Ctrl + Enter : Insert line below
 Ctrl + Shift + Enter : Inter line above
 Ctrl + ]/[ : Intent / outdent line
+
+Ctrl+Shift+t : focus terminal
+Ctrl+tab: next terminal when terminal is in focus
+Ctrl+Shift+tab: Previous terminal when terminal windows is in focus
+Ctrl+n : New terminal window when terminal windows is in focus
+
+Ctrl+Alt+v : Toggle vim
+
+Ctrl+n : new file when explorer view in focus
+Ctrl+Shift+n : New folder when explore view in focus
+
