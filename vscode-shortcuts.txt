@@ -11,7 +11,7 @@ Ctrl+Shift+t : focus terminal
 Ctrl+tab: next terminal when terminal is in focus
 Ctrl+Shift+tab: Previous terminal when terminal windows is in focus
 Ctrl+n : New terminal window when terminal windows is in focus
-
+Ctrl+w : Close current terminal windows when teminal windows is focus.
 Ctrl+Alt+v : Toggle vim
 
 Ctrl+n : new file when explorer view in focus
