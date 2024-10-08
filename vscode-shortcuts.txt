@@ -17,3 +17,5 @@ Ctrl+Alt+v : Toggle vim
 Ctrl+n : new file when explorer view in focus
 Ctrl+Shift+n : New folder when explore view in focus
 
+Ctrl+1 : Move focus from terminal to editor windows
+Ctrl+Shift+E : Focus to explorer windows
