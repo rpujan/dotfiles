@@ -46,6 +46,7 @@ tmux new -s development -n editor  Creates a session named “development” and
                                    window "editor."
 tmux attach -t development         Attaches to a session named "development."
 
+*:* Default prefix tools: Ctrl+B
 
 Default Commands for Sessions, Windows, and Panes
 -------------------------------------------------

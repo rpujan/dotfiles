@@ -40,7 +40,7 @@ set noshowmode
 set updatetime=250 
 set encoding=UTF-8
 set mouse=a
-
+set nrformats= " treat all numbers as decimals
 set colorcolumn=100
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
@@ -106,6 +106,10 @@ set termguicolors
 " colorscheme nibble " Dos like theme
 " colorscheme fairyfloss
 colorscheme catppuccin_mocha
+
+" Change colorscheme according to the programming language
+autocmd BufEnter *.cpp colorscheme nibble
+
 " Insert a newline without entering in insert mode
 nmap oo o<Esc>k
 nmap OO O<Esc>j
