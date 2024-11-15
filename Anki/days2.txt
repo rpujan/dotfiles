@@ -1,0 +1,7 @@
+Lunes|(LOO-nes)|Monday
+Martes|(MAR-tes)|Tuesday
+Miercol|(mee-EHR-ko-les)|Wednesday
+Jueves|(HWEH-ves)|Thursday
+Viernes|(BYER-nes)|Friday
+Sabado|(SAH-bah-do)|Saturday
+Domingo|(do-MEEN-go)|Sunday

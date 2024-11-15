@@ -1,0 +1,12 @@
+Madre|MAH-dreh|Mother  
+Padre|PAH-dreh|Father  
+Hermano|ehr-MAH-noh|Brother  
+Hermana|ehr-MAH-nah|Sister  
+Abuelo|ah-BWEH-loh|Grandfather  
+Abuela|ah-BWEH-lah|Grandmother  
+Tío|TEE-oh|Uncle  
+Tía|TEE-ah|Aunt
+Esposo|ehs-POH-soh|Husband  
+Esposa|ehs-POH-sah|Wife  
+Hijo|EE-hoh|Son  
+Hija|EE-hah|Daughter

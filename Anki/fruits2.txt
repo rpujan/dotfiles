@@ -1,0 +1,10 @@
+Manzana|mahn-SAH-nah|Apple
+Platano|PLAH-tah-no|Banana
+Naranja|nah-RAHN-ha|Orange
+Uva|OO-vah|Grape
+Fresa|FREH-sah|Strawberry
+Limon|lee-MOHN|Lemon
+Pina|PEE-nyah|Pineapple
+Mango|MAHN-go|Mango
+Durazno|doo-RAHS-no|Peach
+Sandia|san-DEE-ah|Watermelon

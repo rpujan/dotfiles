@@ -1,0 +1,10 @@
+Rojo|(ROH-ho)|Red
+Azul|(ah-SOOL)|Blue
+Verde|(VEHR-deh)|Green
+Amarillo|(ah-mah-REE-yo)|Yellow
+Negro|(NEH-gro)|Black
+Blanco|(BLAHN-co)|White
+Rosa|(ROH-sah)|Pink
+Morado|(moh-RAH-do)|Purple
+Marron|(mah-ROHN)|Brown
+Anaranjado|(ah-nah-rahn-HA-do)|Orange

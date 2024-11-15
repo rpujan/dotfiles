@@ -1,0 +1,26 @@
+Madre|MAH-dreh|Mother  
+Padre|PAH-dreh|Father  
+Hermano|ehr-MAH-noh|Brother  
+Hermana|ehr-MAH-nah|Sister  
+Abuelo|ah-BWEH-loh|Grandfather  
+Abuela|ah-BWEH-lah|Grandmother  
+Tío|TEE-oh|Uncle  
+Tía|TEE-ah|Aunt
+Esposo|ehs-POH-soh|Husband  
+Esposa|ehs-POH-sah|Wife  
+Hijo|EE-hoh|Son  
+Hija|EE-hah|Daughter  
+
+  
+Primo|PREE-moh|Male Cousin  
+Prima|PREE-mah|Female Cousin  
+Nieto|NYEH-toh|Grandson  
+Nieta|NYEH-tah|Granddaughter  
+Suegro|SWEH-groh|Father-in-law  
+Suegra|SWEH-grah|Mother-in-law  
+Cuñado|koo-NYAH-doh|Brother-in-law  
+Cuñada|koo-NYAH-dah|Sister-in-law  
+Padrastro|pah-DRAHS-troh|Stepfather  
+Madrastra|mah-DRAHS-trah|Stepmother  
+Hijastro|ee-HAHS-troh|Stepson  
+Hijastra|ee-HAHS-trah|Stepdaughter  

@@ -1,0 +1,12 @@
+Enero|(eh-NEH-ro)|January
+Febrero|(feh-BREH-ro)|February
+Marzo|(MAR-so)|March
+Abril|(ah-BREEL)|April
+Mayo|(MAH-yo)|May
+Junio|(HOO-nee-oh)|June
+Julio|(HOO-lee-oh)|July
+Agosto|(ah-GO-sto)|August
+Septiembre|(sep-TYEHM-breh)|September
+Octubre|(ock-TOO-breh)|October
+Noviembre|(no-VYEHM-breh)|November
+Diciembre|(dee-SYEHM-breh)|December

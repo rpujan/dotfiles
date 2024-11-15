@@ -1,0 +1,10 @@
+Tomate|(to-MAH-te)|Tomato
+Papa|(PAH-pah)|Potato
+Cebolla|(seh-BOH-yah)|Onion
+Zanahoria|(sah-nah-OH-ree-ah)|Carrot
+Lechuga|(leh-CHOO-gah)|Lettuce
+Ajo|(AH-ho)|Garlic
+Pimiento|(pee-MYEHN-to)|Pepper
+Pepino|(peh-PEE-no)|Cucumber
+Brocoli|(BROH-ko-lee)|Broccoli
+Espinaca|(es-pee-NAH-kah)|Spinach
