@@ -1,0 +1,155 @@
+mexicano|me-hee-KAH-noh|Mexican (male)
+cubano|koo-BAH-noh|Cuban (male)
+mexicana|me-hee-KAH-nah|Mexican (female)
+cubana|koo-BAH-nah|Cuban (female)
+nombre|NOHM-breh|Name
+americana|ah-meh-ree-KAH-nah|American (female)
+españa|es-PAH-nyah|Spain
+me llamo|meh YAH-moh|My name is
+americano|ah-meh-ree-KAH-noh|American (male)
+medicina|meh-dee-SEE-nah|Medicine
+universidad|oo-nee-vehr-see-DAHD|University
+computadora|kohm-poo-tah-DOH-rah|Computer
+lees|LEHS|You read
+estudias|ehs-TOO-dee-ahs|You study
+escribes|ehs-KREE-behs|You write
+profesor|proh-feh-SOHR|Teacher (male)
+escribo|ehs-KREE-boh|I write
+importante|eem-pohr-TAHN-teh|Important
+estudio|ehs-TOO-dee-oh|I study
+mucho|MOO-choh|A lot
+comprendo|kohm-PREHN-doh|I understand
+leo|LEH-oh|I read
+escribir|ehs-kree-BEER|To write
+pregunta|preh-GOON-tah|Question
+leer|leh-EHR|To read
+estudiar|ehs-too-dee-AHR|To study
+problema|proh-BLEH-mah|Problem
+estudiante|ehs-too-dee-AHN-teh|Student
+difícil|dee-FEE-seel|Difficult
+clase|KLAH-seh|Class
+fácil|FAH-seel|Easy
+maestro|mah-EHS-troh|Teacher (male)
+examen|ehk-SAH-mehn|Exam
+libro|LEE-broh|Book
+escuela|ehs-KWEH-lah|School
+bolígrafo|boh-LEE-grah-foh|Pen
+demasiado|deh-mah-SYAH-doh|Too much
+cinturón|seen-too-ROHN|Belt
+reloj|reh-LOH|Watch
+favorita|fah-voh-REE-tah|Favorite (female)
+cómodo|KOH-moh-doh|Comfortable
+cartera|kahr-TEH-rah|Wallet
+diferente|dee-fehr-EHN-teh|Different
+abrigo|ah-BREE-goh|Coat
+caro|KAH-roh|Expensive
+ese|EH-seh|That (masculine)
+barato|bah-RAH-toh|Cheap
+faja|FAH-hah|Belt
+rojo|ROH-hoh|Red
+este|EHS-teh|This (masculine)
+comprar|kohm-PRAHR|To buy
+sombrero|sohm-BREH-roh|Hat
+gris|GREES|Gray
+camiseta|kah-mee-SEH-tah|T-shirt
+vestido|ves-TEE-doh|Dress
+marrón|mah-ROHN|Brown
+camisa|kah-MEE-sah|Shirt
+ropa|ROH-pah|Clothing
+tienda|TYEN-dah|Store
+chaqueta|chah-KEH-tah|Jacket
+azul|ah-SOOL|Blue
+buró|boo-ROH|Desk
+verde|BEHR-deh|Green
+vara|BAH-rah|Stick
+barra|BAH-rrah|Bar
+forro|FOH-rroh|Cover
+foro|FOH-roh|Forum
+burro|BOO-rroh|Donkey
+frustración|froos-trah-SYOHN|Frustration
+vinagre|vee-NAH-greh|Vinegar
+almendra|ahl-MEHN-drah|Almond
+carcajada|kahr-kah-HAH-dah|Loud laugh
+brisa|BREE-sah|Breeze
+bruma|BROO-mah|Mist
+broma|BROH-mah|Joke
+barro|BAH-rroh|Mud
+gorro|GOH-rroh|Cap
+ferrocarril|feh-rroh-kah-REEL|Railway
+carreta|kah-RREH-tah|Cart
+aretes|ah-REH-tehs|Earrings
+coro|KOH-roh|Choir
+pera|PEH-rah|Pear
+loro|LOH-roh|Parrot
+aro|AH-roh|Ring
+faro|FAH-roh|Lighthouse
+rueda|RWEH-dah|Wheel
+roca|ROH-kah|Rock
+rata|RAH-tah|Rat
+rama|RAH-mah|Branch
+rana|RAH-nah|Frog
+rosa|ROH-sah|Rose
+reja|REH-hah|Fence
+mal|MAHL|Bad
+Dios|DYOH-s|God
+vale|VAH-leh|Okay
+hay|AY|There is/are
+consejo|kohn-SEH-hoh|Advice
+todo|TOH-doh|Everything
+corazón|koh-rah-SOHN|Heart
+quién|KYEHN|Who
+más|MAHS|More
+sé|SEH|I know
+enamorada|eh-nah-moh-RAH-dah|In love (female)
+novia|NOH-vyah|Girlfriend
+cuándo|KWAHN-doh|When
+ojos|OH-hohs|Eyes
+te|TEH|You (informal)
+novio|NOH-vyoh|Boyfriend
+menudo|meh-NOO-doh|Small/frequent
+por|POHR|For/by
+quieres|KYEH-rehs|You want
+cielo|SYEH-loh|Sky/heaven
+número|NOO-meh-roh|Number
+gustas|GOOS-tahs|You like
+buñuelos|boo-NYEH-lohs|Fritters
+luces|LOO-sehs|Lights
+estrella|ehs-TREH-yah|Star
+tarjeta|tar-HEH-tah|Card
+regalo|reh-GAH-loh|Gift
+juguetes|hoo-GEH-tehs|Toys
+celebrar|seh-leh-BRAHR|To celebrate
+turrón|too-ROHN|Nougat
+reyes|REH-yehs|Kings
+árbol|AHR-bohl|Tree
+tamales|tah-MAH-lehs|Tamales
+navidad|nah-bee-DAHD|Christmas
+villancico|vee-yahn-SEE-koh|Carol
+dulces|DOOL-sehs|Sweets
+feliz|feh-LEES|Happy
+nochebuena|noh-cheh-BWEH-nah|Christmas Eve
+y|EE|And
+interesante|een-teh-reh-SAHN-teh|Interesting
+tienes|TYEH-nehs|You have
+hija|EE-hah|Daughter
+bicicleta|bee-see-KLEH-tah|Bicycle
+vivo|VEE-boh|I live
+abuela|ah-BWEH-lah|Grandmother
+familia|fah-MEE-lyah|Family
+perfecto|pehr-FEHK-toh|Perfect
+abuelo|ah-BWEH-loh|Grandfather
+apartamento|ah-pahr-tah-MEHN-toh|Apartment
+esposo|ehs-POH-soh|Husband
+esposa|ehs-POH-sah|Wife
+perro|PEH-rroh|Dog
+hermano|ehr-MAH-noh|Brother
+bonito|boh-NEE-toh|Pretty
+muy|MOO-ee|Very
+gato|GAH-toh|Cat
+hermana|ehr-MAH-nah|Sister
+grande|GRAHN-deh|Big
+casa|KAH-sah|House
+carro|KAH-rroh|Car
+padre|PAH-dreh|Father
+elegante|eh-leh-GAHN-teh|Elegant
+tiene|TYEH-neh|He/she has
