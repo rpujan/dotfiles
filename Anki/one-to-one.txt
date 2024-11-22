@@ -1,0 +1,675 @@
+Active	Energetic
+Antique	Old item
+Agility	Quickness
+Attire	Dress
+Awful	Dreadful, Atrocious
+Assets	Earnings
+Ample/Myriad of/Numerous	Lots of
+Amateur	Beginner
+Assault	Attack
+Abroad	Overseas
+Always	Forever
+Adversity	Difficulty
+Allure	Attract
+Admit	Confess
+Amiable	Friendly
+Annoy	Disturb someone
+Aggressive	Assertive
+Acquit	Release
+Awful	Terrible
+Ambition	Dreams
+Anxious	Nervous
+Achieve	Accomplish
+Aid	Help
+Amount	Quantity
+Adroit	Expert
+Adequate	Sufficient
+Alteration	Change
+Ambiance	Environment
+Allow	Permit
+Amicable	Helpful
+Astonishing	Surprising
+Ambitious	Aspiring
+Accord	Agreement
+Abode	A place where you live
+Accurate	Correct
+Away	Absent
+Arrive	Reach
+Angry	Mad
+Authentic	Genuine
+Abandon/Abort	To leave something
+Add	Increase
+Answer	Response
+Alike	Same
+Abstraction	To deduct
+Ask	Inquire
+Adamant	Firm
+Appreciation	To applaud one’s effort
+Agree	Consent
+Approve	Accept
+Baffle	Confuse
+Belligerent	Hostile
+Benevolent	Kind-hearted
+Bias	Prejudice
+Brevity	Conciseness
+Bizarre	Strange
+Banal	Commonplace
+Barren	Empty
+Blatant	Obvious
+Bemoan	Complain about
+Beneath	Below
+Belittle	Disparage
+Bewilder	Confuse
+Brazen	Bold
+Bountiful	Abundant
+Berate	Scold
+Behemoth	Huge
+Beneficial	Advantageous
+Baffle	Confuse
+Blissful	Joyful
+Burgeon	Flourish
+Banish	Expel
+Bypass	Avoid
+Blithe	Carefree
+Brisk	Quick
+Brood	Worry
+Brawl	Fight
+Brevity	Conciseness
+Bungle	Mess up
+Befuddle	Confuse
+Bolster	Support
+Beguile	Deceive
+Bypass	Avoid
+Brevity	Conciseness
+Bask	Enjoy
+Blatant	Obvious
+Bemoan	Complain about
+Benevolent	Kind-hearted
+Bizarre	Strange
+Bountiful	Abundant
+Belligerent	Hostile
+Banal	Commonplace
+Blatant	Obvious
+Bewildered	Confused
+Bristle	React angrily
+Cacophony	Harsh sound
+Callous	Insensitive
+Candid	Honest
+Capitulate	Surrender
+Catalyst	Stimulus
+Caution	Warning
+Cerebral	Intellectual
+Charismatic	Charming
+Coalesce	Merge
+Coherent	Logical
+Colossal	Huge
+Complacent	Self-satisfied
+Concede	Admit
+Conducive	Favorable
+Conundrum	Puzzle
+Cordial	Friendly
+Corroborate	Confirm
+Credible	Reliable
+Cryptic	Mysterious
+Culminate	Peak
+Cumbersome	Bulky
+Cynical	Skeptical
+Concur	Agree
+Constrict	Tighten
+Contentious	Controversial
+Conundrum	Enigma
+Copious	Abundant
+Corrode	Erode
+Curtail	Shorten
+Convoluted	Complicated
+Conspicuous	Noticeable
+Consume	Devour
+Commence	Begin
+Collaborate	Cooperate
+Chronicle	Record
+Circumvent	Avoid
+Connoisseur	Expert
+Composure	Calmness
+Consensus	Agreement
+Congenial	Friendly
+Contrive	Invent
+Constitute	Form
+Constrict	Tighten
+Connoisseur	Expert
+Consume	Devour
+Commence	Begin
+Chronicle	Record
+Dazzling	Bright, splendid
+Deceive	Mislead, trick
+Decipher	Decode, interpret
+Deficient	Lacking, inadequate
+Delicate	Fragile, subtle
+Deter	Discourage
+Deviate	Diverge, stray
+Diligent	Hardworking, meticulous
+Diminish	Reduce, decrease
+Discern	Perceive, recognize
+Discreet	Cautious, subtle
+Disperse	Scatter, spread
+Distinct	Clear, unique
+Diverse	Varied, different
+Dominate	Control, overpower
+Durable	Lasting, sturdy
+Dynamic	Energetic, lively
+Dwell	Reside, inhabit
+Dwindle	Decrease, diminish
+Dynamic	Energetic, lively
+Eager	Enthusiastic
+Elaborate	Detailed
+Embrace	Hug
+Empathy	Understanding
+Endeavor	Effort
+Enrich	Improve
+Enhance	Improve
+Enthusiastic	Excited
+Ephemeral	Temporary
+Eradicate	Eliminate
+Erratic	Unpredictable
+Exemplify	Illustrate
+Exuberant	Energetic
+Elusive	Hard to catch
+Eloquent	Fluent
+Eminent	Distinguished
+Empower	Strengthen
+Encompass	Include
+Endorse	Support
+Entice	Attract
+Esteem	Respect
+Evolve	Develop
+Exceed	Surpass
+Exquisite	Beautiful
+Exemplary	Outstanding
+Explicit	Clear
+Expose	Uncover
+Extend	Expand
+Elude	Avoid
+Endure	Tolerate
+Exasperate	Irritate
+Eccentric	Unconventional
+Elicit	Evoke
+Elongate	Lengthen
+Enlist	Recruit
+Facilitate	Simplify
+Formidable	Intimidating
+Flourish	Thrive
+Fickle	Unpredictable
+Frugal	Economical
+Fathom	Comprehend
+Foster	Encourage
+Fluctuate	Vary
+Fortify	Strengthen
+Foresee	Predict
+Fallacious	Misleading
+Frivolous	Trivial
+Facade	Exterior
+Fervent	Passionate
+Foremost	Primary
+Flabbergasted	Astonished
+Fiasco	Disaster
+Flawless	Perfect
+Futile	Ineffective
+Formulate	Develop
+Fundamental	Basic
+Fluctuation	Variation
+Feasible	Achievable
+Fervid	Intense
+Facet	Aspect
+Fanatic	Enthusiast
+Foster	Nurture
+Flimsy	Fragile
+Formidable	Daunting
+Frenetic	Frantic
+Fervor	Zeal
+Forebode	Predict
+Felicity	Happiness
+Fervent	Dedicated
+Forsake	Abandon
+Fracture	Break
+Generous	Kind
+Grateful	Thankful
+Gargantuan	Huge
+Gauge	Measure
+Gaze	Stare
+Glance	Brief look
+Gruesome	Horrifying
+Gregarious	Sociable
+Genuine	Authentic
+Grasp	Understand
+Grumble	Complain
+Garner	Collect
+Gleam	Shine
+Grapple	Wrestle
+Gallant	Brave
+Gallivant	Roam
+Glimpse	Quick look
+Grind	Crush
+Gusto	Enthusiasm
+Guileless	Innocent
+Gravy	Sauce
+Grumble	Complain
+Glorious	Magnificent
+Gloom	Darkness
+Gravitate	Attract
+Gamble	Bet
+Garrison	Military post
+Glitter	Sparkle
+Grating	Irritating
+Glutton	Overeater
+Garish	Gaudy
+Gist	Main idea
+Grueling	Exhausting
+Gaze	Stare
+Harmony	Agreement
+Halt	Stop
+Hasty	Quick
+Hinder	Obstruct
+Hospitable	Welcoming
+Humble	Modest
+Humiliate	Embarrass
+Hybrid	Mixture
+Hesitate	Pause
+Hostile	Unfriendly
+Halt	Stop
+Hearty	Sincere
+Hinderance	Obstacle
+Harmony	Accord
+Hover	Linger
+Heritage	Ancestry
+Heighten	Increase
+Homogeneous	Similar
+Havoc	Chaos
+Hardship	Difficulty
+Haphazard	Random
+Homely	Plain
+Hail	Praise
+Harmonize	Blend
+Harass	Annoy
+Hypothesize	Speculate
+Homage	Respect
+Hinder	Block
+Hardworking	Diligent
+Hesitate	Waver
+Halt	Cease
+Hibernate	Sleep
+Halt	Standstill
+Haughty	Arrogant
+Humorous	Funny
+Hone	Sharpen
+Halt	Break
+Hereditary	Inherited
+Harmony	Unity
+Hostility	Animosity
+Humidity	Moisture
+Hamper	Hinder
+Hallmark	Distinctive mark
+Hue	Color
+Halcyon	Peaceful
+Harbinger	Forerunner
+Hamper	Obstruct
+Illuminate	Light up
+Ingenious	Clever
+Inquire	Ask
+Integrate	Combine
+Inherent	Inbuilt
+Insight	Understanding
+Incite	Encourage
+Inevitable	Unavoidable
+Intrepid	Fearless
+Incessant	Continuous
+Incognito	Disguised
+Incite	Stimulate
+Inclusive	Comprehensive
+Incapacitate	Disable
+Inherent	Intrinsic
+Indifferent	Unconcerned
+Infallible	Unfailing
+Inhibit	Restrain
+Inquisitive	Curious
+Inspire	Motivate
+Invaluable	Priceless
+Invigorate	Energize
+Invariably	Always
+Invoke	Call upon
+Irresistible	Unstoppable
+Impede	Hinder
+Inclination	Preference
+Inherent	Implicit
+Intuition	Instinct
+Illuminate	Clarify
+Incite	Provoke
+Infuse	Inject
+Incarcerate	Imprison
+Inquisitive	Questioning
+Inscribe	Write
+Instigate	Initiate
+Intrepid	Brave
+Incisive	Sharp
+Inconspicuous	Unnoticeable
+Incredulous	Skeptical
+Jeopardy	Danger
+Jovial	Cheerful
+Juxtapose	Compare
+Jargon	Specialized language
+Judicious	Wise
+Jolt	Sudden shock
+Jubilant	Joyful
+Juxtaposition	Side by side
+Justify	Support with evidence
+Jaded	Tired, worn-out
+Jeer	Mocking
+Jocular	Humorous
+Judgemental	Critical
+Jiffy	Instant
+Jittery	Nervous
+Jinx	Bad luck
+Juxtapose	Contrast
+Juggle	Balance
+Joviality	High-spiritedness
+Juxtaposition	Parallelism
+Jovially	Cheerfully
+Jeopardize	Endanger
+Jovial	Merry
+Juxtapose	Place side by side
+Jeer	Ridicule
+Jargon	Lingo
+Keen	Eager
+Kin	Family
+Keenly	Intensely
+Kudos	Praise
+Keystones	Foundations
+Kindred	Similar
+Kinetic	Energetic
+Knead	Massage
+Kindle	Ignite
+Knack	Skill
+Knotty	Complicated
+Kudos	Applause
+Kernel	Core
+Kith	Acquaintances
+Kudos	Approval
+Kowtow	Bow
+Kneel	Bow down
+Kept	Retained
+Kinfolk	Relatives
+Kudos	Compliments
+Knowledge	Wisdom
+Kettle	Pot
+Kinetic	Dynamic
+Kudos	Credit
+Knack	Talent
+Keen	Sharp
+Kneecap	Patella
+Lament	Mourn
+Lucid	Clear
+Lavish	Extravagant
+Loathe	Detest
+Linger	Dally
+Laudable	Praiseworthy
+Legacy	Inheritance
+Lenient	Tolerant
+Livid	Furious
+Luminous	Bright
+Lethargic	Sluggish
+Loquacious	Talkative
+Luminous	Glowing
+Lurk	Skulk
+Lamentable	Pitiable
+Levitate	Float
+Labyrinth	Maze
+Lethal	Deadly
+Lavish	Generous
+Liable	Responsible
+Ludicrous	Absurd
+Languish	Wither
+Lenient	Merciful
+Luminous	Shining
+Lofty	High
+Lucrative	Profitable
+Loquacious	Chatty
+Languid	Lethargic
+Lucid	Coherent
+Laud	Praise
+Legitimate	Legal
+Magnify	Amplify
+Mitigate	Alleviate
+Meticulous	Careful
+Mundane	Ordinary
+Modify	Alter
+Manifest	Display
+Migrate	Move
+Mandatory	Compulsory
+Malicious	Harmful
+Meritorious	Praiseworthy
+Munificent	Generous
+Melancholy	Sad
+Maverick	Nonconformist
+Malleable	Flexible
+Magnanimous	Generous
+Malfunction	Failure
+Mirthful	Joyful
+Morose	Gloomy
+Magnitude	Size
+Meander	Wander
+Miserly	Stingy
+Migrate	Move
+Monotonous	Boring
+Navigate	Direct
+Negate	Deny
+Neglect	Ignore
+Nourish	Nurture
+Notorious	Infamous
+Necessitate	Require
+Notable	Remarkable
+Nominate	Propose
+Negligible	Insignificant
+Noteworthy	Remarkable
+Nurturing	Supporting
+Novelty	Innovation
+Nostalgia	Longing for the past
+Notion	Idea
+Nuanced	Subtle
+Nimble	Agile
+Nullify	Cancel
+Nifty	Clever
+Nascent	Emerging
+Navigate	Direct
+Negate	Deny
+Neglect	Ignore
+Nourish	Nurture
+Notorious	Infamous
+Necessitate	Require
+Notable	Remarkable
+Nominate	Propose
+Negligible	Insignificant
+Noteworthy	Remarkable
+Nurturing	Supporting
+Objective	Goal
+Obligation	Duty
+Observe	Watch
+Obtain	Acquire
+Occasion	Event
+Occur	Happen
+Odd	Strange
+Omit	Exclude
+Ongoing	Continuous
+Option	Choice
+Overcome	Conquer
+Owe	Ought to pay
+Obsolete	Outdated
+Outrage	Offense
+Oversee	Supervise
+Overwhelm	Overpower
+Overtake	Surpass
+Overview	Summary
+Oppose	Resist
+Perceive	Discern
+Ponder	Contemplate
+Profound	Deep
+Prolific	Productive
+Persuade	Convince
+Prevail	Triumph
+Persevere	Persist
+Plausible	Credible
+Prudent	Wise
+Paradox	Contradiction
+Pensive	Thoughtful
+Plentiful	Abundant
+Pragmatic	Practical
+Pivotal	Crucial
+Precarious	Risky
+Pinnacle	Summit
+Placid	Calm
+Perilous	Dangerous
+Pristine	Immaculate
+Penchant	Inclination
+Plausible	Believable
+Pungent	Sharp
+Prodigy	Genius
+Proximity	Nearness
+Paragon	Exemplar
+Paramount	Supreme
+Patronize	Condescend
+Peripheral	Marginal
+Persevere	Endure
+Prevalent	Widespread
+Prominent	Eminent
+Quaint	Charming
+Quandary	Dilemma
+Quash	Suppress
+Quell	Suppress
+Quench	Satisfy
+Query	Question
+Quibble	Petty argument
+Quiescent	Inactive
+Quirk	Peculiarity
+Quiver	Tremble
+Quota	Allotment
+Quotidian	Everyday
+Quizzical	Puzzled
+Quaint	Old-fashioned
+Quench	Extinguish
+Quip	Witty remark
+Qualm	Uneasy feeling
+Radiant	Bright, Shining
+Resilient	Strong, Tough
+Reluctant	Hesitant, Unwilling
+Robust	Strong, Sturdy
+Rationale	Reasoning
+Revere	Respect, Honor
+Repudiate	Reject, Disown
+Rendezvous	Meeting, Gathering
+Relinquish	Surrender, Give Up
+Redundant	Unnecessary, Excess
+Rigorous	Strict, Thorough
+Resplendent	Shining, Dazzling
+Replenish	Refill, Renew
+Reclusive	Withdrawn, Solitary
+Ramification	Consequence, Result
+Rapture	Bliss, Ecstasy
+Reckless	Careless, Rash
+Rectify	Correct, Fix
+Recapitulate	Summarize, Review
+Reciprocal	Mutual, Shared
+Replicate	Duplicate, Copy
+Relinquish	Surrender, Give Up
+Resonate	Echo, Reverberate
+Revere	Respect, Honor
+Rejuvenate	Revitalize, Renew
+Sage	Wise
+Scrutinize	Examine
+Serene	Calm
+Sincere	Genuine
+Skeptical	Doubtful
+Subtle	Not obvious
+Suppress	Quash
+Solemn	Serious
+Strenuous	Demanding
+Sanctuary	Refuge
+Sublime	Majestic
+Surpass	Exceed
+Sporadic	Occasional
+Substantiate	Confirm
+Serendipity	Luck
+Stagnant	Motionless
+Synchronize	Coordinate
+Savor	Enjoy
+Surrogate	Substitute
+Supple	Flexible
+Sanctuary	Refuge
+Synchronize	Coordinate
+Salient	Prominent
+Tenacious	Persistent
+Tremendous	Enormous
+Thrive	Flourish
+Tolerate	Endure
+Transparent	Clear
+Tenure	Term
+Transition	Change
+Tactful	Diplomatic
+Tangible	Perceptible
+Tedious	Monotonous
+Ubiquitous	Omnipresent
+Unveil	Reveal
+Utilize	Employ
+Unique	Distinctive
+Undermine	Weaken
+Ubiquity	Prevalence
+Upheaval	Disturbance
+Underestimate	Undervalue
+Vibrant	Lively
+Versatile	Adaptable
+Validate	Confirm
+Vigorous	Energetic
+Venture	Undertaking
+Vital	Essential
+Volatile	Unstable
+Vogue	Trend
+Widespread	Common
+Witty	Clever
+Wrath	Anger
+Wholesome	Healthy
+Wane	Decrease
+Withstand	Endure
+Wary	Cautious
+Wistful	Reflective
+Xenophobia	Fear of strangers
+Xerox	Photocopy
+Xenial	Hospitable
+Xanadu	Ideal place of beauty and contentment
+Xerophyte	Drought-resistant plant
+Yearn	Long for
+Yield	Produce
+Yonder	Distant
+Yearning	Craving
+Yielding	Compliant
+Yarn	Thread
+Yieldless	Unproductive
+Yowl	Howl
+Yawn	Sigh
+Yoke	Harness
+Yore	Past
+Yell	Shout
+Yielding	Surrendering
+Yank	Pull
+Yawn	Gape
+Yielding	Flexible
+Zeal	Enthusiasm
+Zest	Liveliness
+Zenith	Pinnacle
+Zany	Comical
+Zealous	Passionate
+Zephyr	Breeze
+Zestful	Energetic
+Zilch	Nothing
+Zing	Vitality
+Zigzag	Winding path
+Zeppelin	Airship
+Zero	Nothing
+Zest	Flavor
+Zircon	Gemstone
+Zesty	Flavorful
