@@ -107,8 +107,8 @@ class Program
         // Summary of the game
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("\nGame Over!");
-        Console.WriteLine($"Total Questions: {totalQuestions}");
+        Console.WriteLine("Game Over!");
+        Console.WriteLine($"Total Questions: {totalQuestions-1}");
         Console.WriteLine($"Correct Answers: {correctAnswers}");
         Console.WriteLine($"Incorrect Answers: {incorrectAnswers}");
         Console.ResetColor();
