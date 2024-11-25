@@ -49,15 +49,31 @@ class Program
         int correctAnswers = 0;
         int incorrectAnswers = 0;
 
+        // Priority list for incorrect answers
+        List<(string Key, string Value)> priorityList = new List<(string Key, string Value)>();
+        int regularQuestionCount = 0;
+
         // Game loop
         while (true)
         {
             totalQuestions++;
 
-            // Pick a random pair and decide whether to prompt the key or value
-            var pair = wordPairs[random.Next(wordPairs.Count)];
-            bool promptKey = random.Next(2) == 0;
+            (string Key, string Value) pair;
 
+            // Decide whether to pick from priority list or main list
+            if (priorityList.Count > 0 && regularQuestionCount >= 3) // Every 3-4 questions, pick from priority list
+            {
+                pair = priorityList[random.Next(priorityList.Count)];
+                regularQuestionCount = 0; // Reset the counter
+            }
+            else
+            {
+                pair = wordPairs[random.Next(wordPairs.Count)];
+                regularQuestionCount++;
+            }
+
+            // Randomly decide whether to prompt for Key or Value
+            bool promptKey = random.Next(2) == 0;
             string prompt = promptKey ? pair.Key : pair.Value;
             string correctAnswer = promptKey ? pair.Value : pair.Key;
 
@@ -68,8 +84,7 @@ class Program
             Console.WriteLine($"Question: {totalQuestions:D2}");
 
             // Ask the question: either key or value
-            //Console.WriteLine($"\nWhat is the corresponding word for \"{prompt}\"?");
-			Console.WriteLine(prompt);
+            Console.WriteLine(prompt);
             string userAnswer = Console.ReadLine();
 
             // Terminate if user presses Enter without typing anything
@@ -88,6 +103,9 @@ class Program
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Correct!");
                 Console.ResetColor();
+
+                // Remove the pair from the priority list if answered correctly
+                priorityList.Remove(pair);
             }
             else
             {
@@ -96,8 +114,14 @@ class Program
                 Console.WriteLine($"Incorrect! The correct answer is \"{correctAnswer}\".");
                 Console.ResetColor();
 
+                // Add to the priority list if not already present
+                if (!priorityList.Contains(pair))
+                {
+                    priorityList.Add(pair);
+                }
+
                 // Delay for 1 second if answer is incorrect
-                Thread.Sleep(1000);  // 1 second delay
+                Thread.Sleep(1000); // 1 second delay
             }
 
             // Delay for 500 milliseconds (half a second) for the next question after correct answer
@@ -107,8 +131,8 @@ class Program
         // Summary of the game
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("Game Over!");
-        Console.WriteLine($"Total Questions: {totalQuestions-1}");
+        Console.WriteLine("\nGame Over!");
+        Console.WriteLine($"Total Questions: {totalQuestions}");
         Console.WriteLine($"Correct Answers: {correctAnswers}");
         Console.WriteLine($"Incorrect Answers: {incorrectAnswers}");
         Console.ResetColor();

@@ -1,0 +1,51 @@
+Hello/Hi!	¡Hola!
+Good morning.	Buenos días.
+Good afternoon.	Buenas tardes.
+Good evening.	Buenas tardes /noches.
+Goodnight.	Buenas noches.
+See you soon.	Hasta pronto.
+See you later.	Hasta luego.
+See you tomorrow.	Hasta mañana.
+See you on Saturday.	Hasta el sábado.
+Bye!	Adiós!
+Have a good day/evening!	Que pases un buen día! / una buena noche!
+Pleased to meet you.	Encantado.
+Yes.	Sí.
+No.	No.
+I don’t know.	No sé.
+Please.	Por favor.
+Yes, please.	Sí, por favor.
+Thank you.	Gracias.
+No, thanks.	No, gracias.
+Excuse me.	Perdone.
+Sorry?	¿Perdón?
+I’m sorry.	Lo siento.
+OK!	¡De acuerdo!
+You’re welcome.	De nada.
+I don’t understand.	No entiendo.
+How old are you?	¿Cuántos años tienes?
+May I ask how old you are?	¿Puedo preguntarle qué edad tiene?
+When is your birthday?	¿Cuándo es tu cumpleaños?
+I’m ... years old.	Tengo ... años.
+My birthday is on...	Mi cumpleaños es el...
+I was born in...	Nací el...
+Where are you from?	¿De dónde eres?
+Where do you live?	¿Dónde vives?
+I live in...	Vivo en...
+I’m from...	Soy de...
+I’m...	Soy...
+Scottish	escocés
+English	inglés
+Irish	irlandés
+Welsh	galés
+British	británico
+Are you married/single? (to a man)	¿Estás casado / soltero?
+Are you married/single? (to a woman)	¿Estás casada / soltera?
+I’m married/single. (man)	Estoy casado / soltero.
+I’m married/single. (woman)	Estoy casada / soltera.
+I have a partner.	Tengo pareja.
+I’m divorced/widowed.(man)	Estoy divorciado /viudo.
+I’m divorced/widowed.(woman)	Estoy divorciada /viuda.
+Do you have any children?	¿Tienes hijos?
+I have ... children.	Tengo ... hijos.
+I don’t have any children.	No tengo hijos.
