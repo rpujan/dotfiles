@@ -26,7 +26,7 @@ class Program
 
         foreach (var line in lines)
         {
-            var parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            var parts = line.Split(new[] { '\t' }, StringSplitOptions.RemoveEmptyEntries); // Use tab as the separator
             if (parts.Length != 2)
             {
                 continue; // Skip invalid lines silently
@@ -132,7 +132,7 @@ class Program
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("\nGame Over!");
-        Console.WriteLine($"Total Questions: {totalQuestions}");
+        Console.WriteLine($"Total Questions: {totalQuestions-1}");
         Console.WriteLine($"Correct Answers: {correctAnswers}");
         Console.WriteLine($"Incorrect Answers: {incorrectAnswers}");
         Console.ResetColor();
