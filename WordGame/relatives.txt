@@ -1,0 +1,20 @@
+Yo	I
+tu	you
+el	he
+ella	she
+nosotros	we m
+nosotras	we f
+ellos	they m
+ellas	they f
+abuelo	grandfather
+abuela	grandmother
+bisabuelo	great-grandfather
+bisabuela	great-grandmother
+nieta	granddaughter
+nieto	grandson
+tio	uncle
+tia	aunt
+tio abuelo	great uncle
+tia abuela	great aunt
+primo	cousin m
+prima	cousin f
