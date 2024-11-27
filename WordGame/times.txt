@@ -1,0 +1,18 @@
+anteayer	day before yesterday
+ayer	yesterday
+el ano	year
+el dia	day
+el mes	month
+el siglo	century
+la hora	hour
+hoy	today
+la semana	week
+madrugada	dawn, very early in the morning
+manana	tomorrow, morning
+medianoche	midnight
+mediodia	noon
+el minuto	minute
+la noche	night
+el pasado manana	day after tomorrow
+los segundos	seconds
+la tarde	afternoon
