@@ -1,0 +1,20 @@
+partido	game,match
+manana	tomorrow
+cuando	when
+hoy	today,nowadays
+uso	I am wearing, I am using
+usa	She is using, he is using
+ayuda	help
+necesitas	need
+quiere	want
+ocupada	busy
+te IIamas	your name is
+se IIamas	her name is, his name is
+como esta	how is
+usted	you, you will
+hasta manana	see you tomorrow
+hasta luego	see you later
+cansada	tired
+bien	ok, fine
+estoy	I am
+estas	you are

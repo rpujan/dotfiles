@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading;
 
 class Program
@@ -21,7 +22,7 @@ class Program
         }
 
         // Read the file and store key-value pairs
-        List<(string Key, string Value)> wordPairs = new List<(string Key, string Value)>();
+        List<(string Key, string[] Values)> wordPairs = new List<(string Key, string[] Values)>();
         string[] lines = File.ReadAllLines(filePath);
 
         foreach (var line in lines)
@@ -31,7 +32,13 @@ class Program
             {
                 continue; // Skip invalid lines silently
             }
-            wordPairs.Add((parts[0], parts[1]));
+
+            string key = parts[0].Trim();
+            string[] values = parts[1].Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                                      .Select(v => v.Trim()) // Remove whitespace around values
+                                      .ToArray();
+
+            wordPairs.Add((key, values));
         }
 
         // Check if the list is empty
@@ -50,7 +57,7 @@ class Program
         int incorrectAnswers = 0;
 
         // Priority list for incorrect answers
-        List<(string Key, string Value)> priorityList = new List<(string Key, string Value)>();
+        List<(string Key, string[] Values)> priorityList = new List<(string Key, string[] Values)>();
         int regularQuestionCount = 0;
 
         // Game loop
@@ -58,7 +65,7 @@ class Program
         {
             totalQuestions++;
 
-            (string Key, string Value) pair;
+            (string Key, string[] Values) pair;
 
             // Decide whether to pick from priority list or main list
             if (priorityList.Count > 0 && regularQuestionCount >= 3) // Every 3-4 questions, pick from priority list
@@ -74,8 +81,8 @@ class Program
 
             // Randomly decide whether to prompt for Key or Value
             bool promptKey = random.Next(2) == 0;
-            string prompt = promptKey ? pair.Key : pair.Value;
-            string correctAnswer = promptKey ? pair.Value : pair.Key;
+            string prompt = promptKey ? pair.Key : pair.Values[random.Next(pair.Values.Length)];
+            string[] correctAnswersArray = promptKey ? pair.Values : new[] { pair.Key };
 
             // Clear the screen before asking the new question
             Console.Clear();
@@ -96,8 +103,8 @@ class Program
                 break;
             }
 
-            // Check the user's answer
-            if (userAnswer.Trim().Equals(correctAnswer, StringComparison.OrdinalIgnoreCase))
+            // Check if the user's answer is in the correct answers array
+            if (correctAnswersArray.Any(answer => answer.Equals(userAnswer.Trim(), StringComparison.OrdinalIgnoreCase)))
             {
                 correctAnswers++;
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -111,7 +118,7 @@ class Program
             {
                 incorrectAnswers++;
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Incorrect! The correct answer is \"{correctAnswer}\".");
+                Console.WriteLine($"Incorrect! The correct answers are: {string.Join(", ", correctAnswersArray)}");
                 Console.ResetColor();
 
                 // Add to the priority list if not already present
