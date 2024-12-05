@@ -1,0 +1,50 @@
+Trabajar	to work.
+Hablar	to speak.
+Llevar	to carry, bring, to wear.
+Dejar	to leave, abandon, to let, allow.
+Llamar	to call, to name.
+Tomar	to take, drink.
+Mirar	to watch, look out.
+Esperar	to wait for, to hope.
+Entrar	to enter, go in, come in.
+Terminar	to finish, end.
+Necesitar	to need, require.
+Preguntar	to ask, inquire.
+Gustar	to please, be pleasing.
+Comprar	to buy, purchase.
+Ayudar	to help.
+Estudiar	to study.
+Acabar	to finish, end.
+Ganar	to win, gain, earn, get, acquire.
+Usar	to use.
+Olvidar	to forget.
+Presentar	to present, to introduce.
+Crear	to create, make.
+Considerar	to consider.
+Pasar	to pass, to spend time, to happen.
+Viajar	to travel.
+Evitar	to avoid, to prevent.
+Contestar	to answer.
+Imaginar	to imagine.
+Comer	to eat.
+Correr	to run.
+Aprender	to learn.
+Vender	to sell.
+Deber	to owe, must, should, ought to.
+Comprender	to understand, comprehend.
+Beber	to drink.
+Temer	to fear, be afraid of.
+Romper	to break (something).
+Depender	to depend.
+Vivir	to live.
+Existir	to exist.
+Recibir	to receive, to welcome, greet.
+Permitir	to permit, allow.
+Decidir	to decide, settle, resolve.
+Subir	to go up, rise, move up, climb, raise up.
+Compartir	to share, to divide up.
+Consistir	to consist.
+Insistir	to insist.
+Ocurrir	to occur, happen.
+Abrir	to open.
+Sufrir	to suffer, to undergo.

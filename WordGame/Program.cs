@@ -58,6 +58,7 @@ class Program
 
         // Priority list for incorrect answers
         List<(string Key, string[] Values)> priorityList = new List<(string Key, string[] Values)>();
+        Dictionary<string, int> incorrectWords = new Dictionary<string, int>();
         int regularQuestionCount = 0;
 
         // Game loop
@@ -127,6 +128,17 @@ class Program
                     priorityList.Add(pair);
                 }
 
+                // Track incorrect words
+                string incorrectKey = promptKey ? pair.Key : correctAnswersArray[0];
+                if (incorrectWords.ContainsKey(incorrectKey))
+                {
+                    incorrectWords[incorrectKey]++;
+                }
+                else
+                {
+                    incorrectWords[incorrectKey] = 1;
+                }
+
                 // Delay for 1 second if answer is incorrect
                 Thread.Sleep(1000); // 1 second delay
             }
@@ -143,5 +155,17 @@ class Program
         Console.WriteLine($"Correct Answers: {correctAnswers}");
         Console.WriteLine($"Incorrect Answers: {incorrectAnswers}");
         Console.ResetColor();
+
+        // Display the list of incorrect words with their counts
+        if (incorrectWords.Count > 0)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("\nList of Incorrect Words:");
+            foreach (var word in incorrectWords)
+            {
+                Console.WriteLine($"{word.Key} - {word.Value} time(s)");
+            }
+            Console.ResetColor();
+        }
     }
 }

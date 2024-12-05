@@ -1,0 +1,11 @@
+alegre	joyful
+gracioso	funny, amusing
+serio	serious
+timido	shy
+valiente	brave
+loco	crazy
+feliz	happy
+preocupado	worried
+nervioso	nervous
+calmado	calm
+emocionado	excited
