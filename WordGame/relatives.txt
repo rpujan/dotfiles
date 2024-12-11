@@ -4,6 +4,8 @@ el	he
 ella	she
 nosotros	we m
 nosotras	we f
+vosotros	you are m
+vosotras	you are f
 ellos	they m
 ellas	they f
 abuelo	grandfather

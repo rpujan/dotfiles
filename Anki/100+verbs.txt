@@ -1,0 +1,112 @@
+to answer	contestar
+to arrive	llegar
+to ask a question	preguntar
+to attend	asisitir
+to believe	creer
+to annoy	molestar
+to break	romper
+to burn	quemar
+to buy	comprar
+to call	llamar
+to change	cambiar
+to clean	limpiar
+to go up	subir
+to comprehend	comprender
+to congratulate	felicitar
+to consist	consistir
+to cook	cocinar
+to cry	llorar
+to dance	bailar
+to deliver	entregar
+to wish	desear
+to draw	dibujar
+to drink	beber
+to drive	manejar
+to eat	comer
+to end	terminar
+to enter	entrar
+to explain	explicar
+to take out	sacar
+to fill	llenar
+to fix	arreglar
+to get off	bajar
+to get down	bajar
+to give a gift	regalar
+to greet	saludar
+to guess	adivinar
+to have dinner	cenar
+to help	ayudar
+to hide	esconder
+to hug	abrazar
+to insist	insistir
+to kiss	besar
+to know facts	saber
+to last	durar
+to leave	dejar
+to lend	prestar
+to listen	escuchar
+to live	vivir
+to look at	mirar
+to watch	mirar
+to look for	buscar
+to need	necesitar
+to occur	ocurrir
+to open	abrir
+to owe	deber
+to paint	pintar
+to pass	pasar
+to pay	pagar
+to permit	permitir
+to practice	practicar
+to present	presentar
+to prohibit	prohibir
+to promise	prometer
+to read	leer
+to receive	recibir
+to respond	responder
+to rest	descansar
+to return	regresar
+to check	revisar
+to ride	montar
+to run	correr
+to see	ver
+to sell	vender
+to send	mandar
+to share	compartir
+to sing	cantar
+to skate	patinar
+to ski	esquiar
+to smoke	fumar
+to speak	hablar
+to talk	hablar
+to spend	gastar
+to steal	robar
+to rob	robar
+to put away	guardar
+to study	estudiar
+to sweat	sudar
+to sweep	barrer
+to swim	nadar
+to take care of	cuidar
+to take	tomar
+to eat or drink	tomar
+to take	llevar
+to wear	llevar
+to carry	llevar
+to teach	enseñar
+to touch	tocar
+to play an instrument	tocar
+to travel	viajar
+to treat	tratar
+to turn off	apagar
+to use	usar
+to vary	variar
+to verify	verificar
+to visit	visitar
+to wait	esperar
+to walk	andar
+to wash	lavar
+to win	ganar
+to earn	ganar
+to work	trabajar
+to write	escribir
