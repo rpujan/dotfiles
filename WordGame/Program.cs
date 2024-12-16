@@ -10,7 +10,7 @@ class Program
     {
         // Ask for file path
         Console.WriteLine("Enter the file path (e.g., words.txt): ");
-        string filePath = Console.ReadLine();
+        string filePath = Console.ReadLine() + ".txt";
 
         // Check if the file exists
         if (!File.Exists(filePath))
@@ -27,6 +27,12 @@ class Program
 
         foreach (var line in lines)
         {
+            // Ignore lines starting with "--"
+            if (line.TrimStart().StartsWith("--"))
+            {
+                continue; // Skip this line
+            }
+
             var parts = line.Split(new[] { '\t' }, StringSplitOptions.RemoveEmptyEntries); // Use tab as the separator
             if (parts.Length != 2)
             {
@@ -163,7 +169,7 @@ class Program
             Console.WriteLine("\nList of Incorrect Words:");
             foreach (var word in incorrectWords)
             {
-                Console.WriteLine($"{word.Key} - {word.Value} time(s)");
+                Console.WriteLine($"{word.Key} - {word.Value}");
             }
             Console.ResetColor();
         }
