@@ -1,0 +1,9 @@
+hermoso/a	beautiful 
+guapo/a	handsome 
+feo/a	ugly  
+adorable	cute  
+bonita	pretty  
+impresionante	stunning
+poco atractivo/a	plain  
+promedio/a	average  
+atractivo/a	attractive  

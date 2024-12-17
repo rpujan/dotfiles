@@ -1,0 +1,14 @@
+--el gato	cat
+--el perro	dog
+--el conejo	rabbit
+--el pollo	chicken
+--la gallina	hen
+--el gallo	rooster
+--la vaca	cow
+--el toro	bull
+--la oveja	sheep
+el caballo	horse
+el cerdo	pig
+la cabra	goat
+--el burro	donkey
+--el raton	mouse

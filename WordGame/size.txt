@@ -1,0 +1,9 @@
+grande	big
+pequeno/a	small  
+enorme	huge 
+delgado/a	lean
+esbelto/a	slender
+flaco/a	skinny
+menudo/a	petite
+alto/a	tall
+bajo/a	short

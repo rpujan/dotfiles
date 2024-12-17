@@ -1,11 +1,152 @@
-doler	to hurt
+--doler	to hurt
 --simpatico	nice
-empezar	to start
+--empezar	to start
 --sobre	on
-conocer	to know
-pasar	to pass
-mejor	better
---llegar	to arrive
-pasar	to happen
+--conocer	to know
+--pasar	to pass
+--mejor	better
+llegar	to arrive
+--pasar	to happen
 perder	to lose
---oir	to hear
+oir	to hear
+sacar	to take out
+--el oro	gold
+ver	to see
+--la plaza	square
+--rezar	to pray
+--la estacion	season
+--ser	to be
+--el marron	brown
+--hablar	to speak
+--seguro	sure
+llevar	to take
+--el siglo	century
+encontrar	to find
+poder	to be able to
+dar	to give
+--animar	to encourage
+venir	to come
+--el mes	month
+--cenar	to have dinner
+--pedir	to ask for
+--el campo	countryside
+--traer	to bring
+--levantarse	to get up
+--pensar	to think
+--divertido	fun
+--la película	film
+--el invierno	winter
+--irse	to leave
+--estar	to be
+--el verano	summer
+--la cocina	kitchen
+--la semana	week
+--haber	to have	
+--ponerse	to put on
+--el otono	fall
+--ir	to go
+--la primavera	spring
+--mas	more
+--tambien	also
+--tranquilo	calm
+--dejar	to leave
+--el abrigo	coat
+--como	like
+--el cocinero	cook
+--anaranjado	orange
+--hacer	to do
+--rico	rich
+--aburrido	boring
+--la comida	food
+--el cine	movie theater
+--morado	purple
+--tener	to have
+--volver	to return
+--el pais	country
+--el desarrollo	development
+--el/la periodista	journalist
+--comer	to eat
+--poner	to put
+--decir	to say
+--querer	to want
+--la plata	silver
+--el novio	boyfriend
+--rosado	pink
+--que	that
+--contigo	with you
+--salir	to go out
+--joven	young
+--la musica	music
+--amarillo	yellow
+--pagar	to pay
+--el/la artista	artist
+--la cama	bed
+--buenas noches	good night
+--el terremoto	earthquake
+--el avion	plane
+--enviar	to send
+--cien	one hundred
+--ensenar	to teach
+--pequeno	small
+--competir	to compete
+--el rio	river
+--el deporte	sport
+--el favor	favor
+--el lapiz	pencil
+--cerrado	closed
+--inteligente	intelligent
+--quitar	to take away
+--facil	easy
+--el profesor	teacher
+--sano	healthy
+--saber	to know
+--de repente	suddenly
+--dormir	to sleep
+--leer	to read
+--vivir	to live
+--dormirse	to fall asleep
+--el espanol	Spanish
+--escribir	to write
+--perseguir	to pursue
+--acercarse	to approach
+--el libro	book
+--el ano	year
+--estudiar	to study
+--seguir	to follow
+--comprar	to buy
+--tomar	to take
+--preferir	to prefer
+--gustar	to like
+--servir	to serve
+--el ingles	English
+--sentirse	to feel
+--sentir	to feel
+--llevar	to wear
+--buscar	to look for
+--llamar	to call
+--preguntar	to ask
+--trabajar	to work
+--abrir	to open
+--ayer	yesterday
+--viajar	to travel
+--a	to
+--mirar	to look at
+--de	of,from
+--aprender	to learn
+--creer	to believe
+--la tienda	store
+--el enero	January
+--el febrero	February
+--el marzo	March
+--el abril	April
+--el mayo	May
+--el junio	June
+--el julio	July
+--el agosto	August
+--el septiembre	September
+--el octubre	October
+--el noviembre	November
+--el diciembre	December
+--beber	to drink
+--la ropa	clothing
+--el color	color
