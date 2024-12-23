@@ -1,40 +1,39 @@
---doler	to hurt
---simpatico	nice
---empezar	to start
---sobre	on
---conocer	to know
+doler	to hurt
+simpatico	nice
+empezar	to start
+sobre	on
+conocer	to know
 --pasar	to pass
---mejor	better
+mejor	better
 llegar	to arrive
---pasar	to happen
+pasar	to happen
 perder	to lose
 oir	to hear
 sacar	to take out
---el oro	gold
+el oro	gold
 ver	to see
---la plaza	square
---rezar	to pray
---la estacion	season
---ser	to be
---el marron	brown
---hablar	to speak
---seguro	sure
+la plaza	square
+rezar	to pray
+la estacion	season
+ser	to be
+hablar	to speak
+seguro	sure
 llevar	to take
---el siglo	century
+el siglo	century
 encontrar	to find
 poder	to be able to
 dar	to give
---animar	to encourage
+animar	to encourage
 venir	to come
---el mes	month
---cenar	to have dinner
---pedir	to ask for
---el campo	countryside
---traer	to bring
---levantarse	to get up
---pensar	to think
---divertido	fun
---la película	film
+el mes	month
+cenar	to have dinner
+pedir	to ask for
+el campo	countryside
+traer	to bring
+levantarse	to get up
+pensar	to think
+divertido	fun
+--la pelicula	film
 --el invierno	winter
 --irse	to leave
 --estar	to be

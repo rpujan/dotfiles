@@ -20,3 +20,5 @@ tio abuelo	great uncle
 tia abuela	great aunt
 primo	cousin m
 prima	cousin f
+sobrino	Nephew
+sobrina	Niece
