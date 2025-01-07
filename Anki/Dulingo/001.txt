@@ -1,0 +1,20 @@
+jugador|hoo-gah-DOR|Player  
+son|sohn|They are  
+ellas|EH-yahs|They (feminine)  
+ciudades|see-oo-DAH-dehs|Cities  
+me siento|meh SYEN-toh|I feel  
+se siente|seh SYEN-teh|He/She/It feels  
+un poco|oon POH-koh|A little  
+otra vez|OH-trah behs|Again  
+sorprendido|sor-prehn-DEE-doh|Surprised  
+nunca|NOON-kah|Never  
+a veces|ah BEH-sehs|Sometimes  
+disfrutar|dees-froo-TAHR|To enjoy  
+dormir|dor-MEER|To sleep  
+contento|kohn-TEN-toh|Happy  
+también|tahm-BYEHN|Also  
+por qué|por KEH|Why  
+preocupado|preh-oh-koo-PAH-doh|Worried  
+aburrido|ah-boo-REE-doh|Bored  
+enojado|eh-noh-HAH-doh|Angry  
+siempre|SYEM-preh|Always 

@@ -1,1 +1,82 @@
 mexicano,cubanco,mexicana,cubana,nombre,americana,espana,me llamo, americano,medicina,universidad,computadora,lees,estudias,escribes,profesor,escribo,importante,estudio,mucho,comprendo,leo,escribir,pregunta,leer,estudiar,problema,estudiante,dificil,clase,facil,maestro,examen,libro,escuela,boligrafo,demasiado,cinturon,reloj,favorita,comodo,cartera,diferente,abrigo,caro,ese,barato,faida,rojo,este,comprar,sombrero,gris,camiseta,vestido,marron,camisa,ropa,tienda,chaqueta,azul,buro,verde,vara,barra,forro,foro,burro,frustracion,vintagre,almendra,caracajada,brisa,bruma,broma,barro,gorro,ferrocarrit,carreta,aretes,coro,pera,loro,aro,faro,rueda,roca,rata,rama,rana,rosa,reja,mal,dios,vale,hay,consejo,todo,corazon,quien,mas,se,enamorada,novia,cuando,ojos,te,novio,menudo,por,quieres,cielo,numero,gustas,numero,gustas,bunuelos,luces,estrella,tarjeta,regalo,juguetes,celebrar,turron,reyes,arbol,tamales,navidad,villancico,dulces,feliz,nochebuena,y,interesante,tienes,hija,bicicieta,vivo,abuela,familia,perfecto,abuelo,apartamento,esposo,esposa,perro,hermano,bonito,muy,gato,hermana,grande,casa,carro,padre,elegate,tiene
+
+izquierda
+tomar
+derecha
+metro
+al lado
+estan
+lejos
+puerta
+parada
+del
+al
+estamos
+parque
+cerca
+viajar
+ir
+cerca de
+mis
+pequena
+tus
+sus
+usan
+estos
+necesitamos
+usamos
+nueves
+cartera
+cuanto
+jugador
+son
+ellas
+ciudades
+me siento
+se siente
+un poco
+otra vez
+sorprendido
+nunca
+a veces
+disfrutar
+dormir
+contento
+tambien
+por que
+preocupado
+aburrido
+enojado
+siemmpre
+triste
+contigo
+conmigo
+que tal
+enfermo
+emocionar
+ahora
+lee
+negocio
+tener
+correo electronico
+poco
+cual
+carta
+mensaje
+jefe
+secretario
+alto
+simpatica
+bajo
+su
+pregunta
+aprender
+ciudad
+camarero
+vivir
+quien
+la pelicula
+baile
+divertido
+fiesta
+cuando
