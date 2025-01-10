@@ -1,0 +1,13 @@
+empezar	to start
+seguir	to follow
+abrir	to open
+buscar	to search
+cantar	to sing
+cerrar	to close
+destruir	to destroy
+dormir	to sleep
+encontrar	to find
+esconder	to hide
+esperar	to wait
+faltar	to miss
+hacer	to do 
