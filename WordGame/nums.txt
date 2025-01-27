@@ -44,3 +44,6 @@
 80	ochenta
 90	noventa
 100	cien
+
+Remove a duplicate lines in a file without sorting it:
+awk '!seen[$0]++' file.txt
