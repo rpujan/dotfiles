@@ -1,0 +1,15 @@
+矮|ǎi|short
+远|yuǎn|far
+近|jìn|near
+大|dà|big
+小|xiǎo|small
+多|duō|many
+少|shǎo|few
+好|hǎo|good
+坏|huài|bad
+冷|lěng|cold
+热|rè|hot
+晴|qíng|sunny
+阴|yīn|cloudy
+雨|yǔ|rain
+雪|xuě|snow

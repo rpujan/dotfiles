@@ -1,0 +1,15 @@
+时候|shíhou|time
+岁|suì|years old
+家|jiā|family, home
+爸爸|bàba|dad
+妈妈|māma|mom
+哥哥|gēge|older brother
+姐姐|jiějie|older sister
+弟弟|dìdi|younger brother
+妹妹|mèimei|younger sister
+儿子|érzi|son
+女儿|nǚ'ér|daughter
+老师|lǎoshī|teacher
+学生|xuésheng|student
+朋友|péngyou|friend
+医生|yīshēng|doctor

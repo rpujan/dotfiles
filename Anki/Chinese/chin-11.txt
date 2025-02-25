@@ -1,0 +1,15 @@
+肉|ròu|meat
+鸡蛋|jīdàn|egg
+面包|miànbāo|bread
+出租车|chūzūchē|taxi
+公共汽车|gōnggòngqìchē|bus
+自行车|zìxíngchē|bicycle
+飞机|fēijī|airplane
+火车|huǒchē|train
+车|chē|car, vehicle
+机场|jīchǎng|airport
+火车站|huǒchēzhàn|train station
+眼睛|yǎnjing|eye
+耳朵|ěrduo|ear
+鼻子|bízi|nose
+嘴|zuǐ|mouth
